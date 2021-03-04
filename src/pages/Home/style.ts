@@ -24,10 +24,6 @@ export const Banner = styled.div`
   position: relative;
   width: 100%;
 
-  .slide {
-    transition-duration: 1s ease;
-  }
-
   .divTitle {
     position: absolute;
     top: 35%;

@@ -5,7 +5,11 @@ interface NavBarProps {
   click: boolean;
 }
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 999;
+`;
 
 export const Header = styled.header`
   background: ${colors.white};

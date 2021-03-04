@@ -4,13 +4,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import GlobalStyle from './styles/global';
-import Routes from './routes';
+
+import Home from './pages/Home';
+import InfoSection from './pages/InfoSection';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <Routes />
+      <Home />
+      <InfoSection />
       <GlobalStyle />
     </Router>
   );
