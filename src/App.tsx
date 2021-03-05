@@ -8,6 +8,7 @@ import GlobalStyle from './styles/global';
 import Home from './pages/Home';
 import InfoSection from './pages/InfoSection';
 import AboutTeam from './pages/AboutTeam';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Home />
       <InfoSection />
       <AboutTeam />
+      <Footer />
       <GlobalStyle />
     </Router>
   );
