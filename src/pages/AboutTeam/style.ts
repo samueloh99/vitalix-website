@@ -52,6 +52,7 @@ export const DoctorCard = styled.div`
       transparent 25%,
       rgba(162, 181, 205, 1) 100%
     );
+    border-radius: 10px;
     opacity: 0;
     transition: all 1s;
   }
