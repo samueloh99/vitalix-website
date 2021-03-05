@@ -58,6 +58,32 @@ export const HeaderOptions = styled.div<NavBarProps>`
   align-items: center;
   text-align: center;
 
+  button {
+    color: ${colors.white};
+    margin-left: 15px;
+    border: none;
+    background: ${colors.blueshock};
+    padding: 0px 10px 0px 40px;
+    display: flex;
+    align-items: center;
+
+    div {
+      width: 2px;
+      height: 35px;
+      margin: 0px 10px 0px 40px;
+      background-color: ${colors.white};
+    }
+
+    &:hover {
+      background-color: ${colors.blueDark};
+      transition: 0.3s;
+      div {
+        background-color: ${colors.blueDark};
+        transition: 0.3s;
+      }
+    }
+  }
+
   a {
     background: transparent;
     border: 0;

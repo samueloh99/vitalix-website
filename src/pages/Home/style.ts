@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import * as colors from '../../styles/colors';
+
 export const Container = styled.div`
   display: flex;
   position: relative;
@@ -23,6 +25,34 @@ export const Container = styled.div`
 export const Banner = styled.div`
   position: relative;
   width: 100%;
+
+  button {
+    position: absolute;
+    color: ${colors.white};
+    border: none;
+    background: ${colors.blueshock};
+    padding: 0px 10px 0px 40px;
+    display: flex;
+    align-items: center;
+    top: 80%;
+    left: 10%;
+
+    div {
+      width: 2px;
+      height: 35px;
+      margin: 0px 10px 0px 40px;
+      background-color: ${colors.white};
+    }
+
+    &:hover {
+      background-color: ${colors.blueDark};
+      transition: 0.3s;
+      div {
+        background-color: ${colors.blueDark};
+        transition: 0.3s;
+      }
+    }
+  }
 
   .divTitle {
     position: absolute;

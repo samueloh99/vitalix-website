@@ -1,7 +1,12 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import {
+  AiOutlineArrowLeft,
+  AiOutlineArrowRight,
+  AiOutlineCalendar,
+} from 'react-icons/ai';
 
 import { Container, Banner } from './style';
 
@@ -69,6 +74,11 @@ const Home: React.FC = () => {
                     <h4>{slider.subtitle3}</h4>
                     <h4>{slider.subtitle4}</h4>
                   </div>
+                  <button>
+                    AGENDE UM HORARIO
+                    <div />
+                    <AiOutlineCalendar />
+                  </button>
                   <img src={slider.image} alt="home banner" />
                 </>
               )}

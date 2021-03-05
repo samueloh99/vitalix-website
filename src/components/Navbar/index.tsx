@@ -1,6 +1,9 @@
+/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 
 import { FaBars, FaTimes, FaInstagram, FaFacebookF } from 'react-icons/fa';
+
+import { AiOutlineCalendar } from 'react-icons/ai';
 
 import { Link } from 'react-router-dom';
 
@@ -55,9 +58,11 @@ const Navbar: React.FC = () => {
             <Link onClick={closeMobileMenu} to="/">
               CONTATO
             </Link>
-            <Link onClick={closeMobileMenu} to="/">
-              AGENDAMENTO ONLINE
-            </Link>
+            <button>
+              AGENDE UM HORARIO
+              <div />
+              <AiOutlineCalendar />
+            </button>
             <LineSeparator />
             <a href="/">
               <FaInstagram

@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const AboutUsSection = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 100px;
 
   h1 {
     color: ${colors.blueDark};
@@ -30,7 +30,7 @@ export const DoctorsSection = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 200px;
   margin-top: 150px;
 `;
 
