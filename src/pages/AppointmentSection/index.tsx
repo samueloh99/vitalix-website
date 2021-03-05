@@ -7,8 +7,6 @@ import { AiOutlineCalendar } from 'react-icons/ai';
 
 import { Container } from './style';
 
-import * as colors from '../../styles/colors';
-
 const Appointment: React.FC = () => {
   return (
     <Container>
