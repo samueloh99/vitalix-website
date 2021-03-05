@@ -10,6 +10,7 @@ import InfoSection from './pages/InfoSection';
 import AboutTeam from './pages/AboutTeam';
 import AppointmentSection from './pages/AppointmentSection';
 import ServiceSection from './pages/ServiceSection';
+import ClientsAvaliation from './pages/ClientsAvaliation';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
       <InfoSection />
       <AboutTeam />
       <ServiceSection />
+      <ClientsAvaliation />
       <AppointmentSection />
       <Footer />
       <GlobalStyle />
