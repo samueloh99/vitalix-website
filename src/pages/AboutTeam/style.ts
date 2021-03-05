@@ -31,7 +31,7 @@ export const DoctorsSection = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 150px;
 `;
 
 export const DoctorCard = styled.div`
