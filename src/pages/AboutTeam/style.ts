@@ -36,7 +36,7 @@ export const DoctorsSection = styled.div`
 
 export const DoctorCard = styled.div`
   text-align: left;
-  width: 320px;
+  width: 243px;
   cursor: pointer;
   position: relative;
 
@@ -72,13 +72,14 @@ export const DoctorCard = styled.div`
   }
 
   img {
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
   }
 
   h1 {
     color: ${colors.black};
     height: 100px;
+    font-size: 25px;
   }
 
   h4 {
