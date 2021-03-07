@@ -32,11 +32,9 @@ const AboutTeam: React.FC = () => {
       <DoctorsSection>
         <DoctorCard>
           <img src={dr1} alt="dr1" />
-          <div>
-            <h4>CROSP: 1145580</h4>
-            <h1>Dr. Daran torres Elias</h1>
-            <BsArrowRight color={colors.black} size={40} />
-          </div>
+          <h4>CROSP: 1145580</h4>
+          <h1>Dr. Daran torres Elias</h1>
+          <BsArrowRight color={colors.black} size={40} />
           <div className="gradientDown" />
         </DoctorCard>
         <DoctorCard>

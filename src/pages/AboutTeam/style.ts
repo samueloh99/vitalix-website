@@ -78,6 +78,7 @@ export const DoctorCard = styled.div`
   &:hover {
     img {
       transform: scale(1.3);
+      border-radius: 10px;
     }
   }
 
@@ -99,6 +100,7 @@ export const DoctorCard = styled.div`
     color: ${colors.black};
     font-weight: lighter;
     padding-left: 10px;
+    margin-top: 10px;
   }
 
   svg {
