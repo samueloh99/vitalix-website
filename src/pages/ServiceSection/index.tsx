@@ -72,8 +72,8 @@ const ServiceSection: React.FC = () => {
                 }}
                 className="info"
               >
-                {serviceData.subtitle?.map((subtitle, _index) => (
-                  <div>{subtitle}</div>
+                {serviceData.subtitle?.map((subtitle, indexData) => (
+                  <div key={indexData}>{subtitle}</div>
                 ))}
               </div>
             </>

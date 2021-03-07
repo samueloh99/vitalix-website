@@ -21,6 +21,7 @@ export const DescriptionSection = styled.div`
   h4 {
     color: ${colors.black};
     font-weight: lighter;
+    font-size: 20px;
   }
 `;
 

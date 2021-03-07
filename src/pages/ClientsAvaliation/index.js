@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable array-callback-return */
 /* eslint-disable no-undef */
 /* eslint-disable react/jsx-no-undef */
@@ -39,7 +40,7 @@ function ClientsAvaliation () {
       />
       <Carousel className="carouselContainer" breakPoints={breakPoints}>
         {ClientsData.map((client, index) => (
-          <Card index={index}>
+          <Card key={index}>
             <FaHeart size={30} color={colors.blueshock} />
             <h4 style={{ fontWeight: 'lighter' }}>{client.comment}</h4>
             <h4>{client.name}</h4>

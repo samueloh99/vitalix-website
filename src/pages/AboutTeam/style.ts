@@ -23,6 +23,7 @@ export const AboutUsSection = styled.div`
     font-weight: lighter;
     margin-top: 23px;
     margin-left: 10px;
+    font-size: 20px;
   }
 `;
 
@@ -36,9 +37,12 @@ export const DoctorsSection = styled.div`
 
 export const DoctorCard = styled.div`
   text-align: left;
-  width: 243px;
+  width: 240px;
   cursor: pointer;
   position: relative;
+
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* hide the excess */
 
   &:after {
     content: '';
@@ -50,7 +54,7 @@ export const DoctorCard = styled.div`
     background-image: linear-gradient(
       to bottom,
       transparent 25%,
-      rgba(162, 181, 205, 1) 100%
+      rgba(162, 181, 205, 1) 60%
     );
     border-radius: 10px;
     opacity: 0;
@@ -71,19 +75,33 @@ export const DoctorCard = styled.div`
     }
   }
 
+  &:hover {
+    img {
+      transform: scale(1.3);
+    }
+  }
+
   img {
     height: 300px;
     border-radius: 10px;
+    display: block; /* no whitespace */
+    transition: 0.3s ease-in-out;
   }
 
   h1 {
     color: ${colors.black};
     height: 100px;
     font-size: 25px;
+    padding-left: 10px;
   }
 
   h4 {
     color: ${colors.black};
     font-weight: lighter;
+    padding-left: 10px;
+  }
+
+  svg {
+    padding-left: 10px;
   }
 `;

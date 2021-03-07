@@ -54,6 +54,6 @@ export const Card = styled.div`
   padding: 30px;
 
   h4 {
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
