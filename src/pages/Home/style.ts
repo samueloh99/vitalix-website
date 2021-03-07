@@ -3,48 +3,71 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
-  display: flex;
-  position: relative;
   width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  .slide {
+    display: flex;
+    min-width: 100%;
+    height: 80vh;
+    transition: 0.5s;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin: 0px 100px 0px 100px;
+      font-size: 50px;
+    }
+    h4 {
+      margin: 0px 100px 10px 100px;
+      font-weight: lighter;
+      font-size: 20px;
+    }
+  }
 
   .rightArrow {
     position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
+    right: 0;
+    z-index: 10;
   }
-
   .leftArrow {
     position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 1;
+    left: 0;
+    z-index: 10;
   }
-`;
 
-export const Banner = styled.div`
-  position: relative;
-  width: 100%;
+  img {
+    position: absolute;
+    z-index: -10;
+  }
 
   button {
-    position: absolute;
     color: ${colors.white};
-    border: none;
     background: ${colors.blueshock};
-    padding: 0px 10px 0px 40px;
+    border: 2px solid ${colors.blueshock};
     display: flex;
     align-items: center;
-    top: 80%;
-    left: 10%;
+    width: 240px;
+    margin: 100px 0px 0px 100px;
+    padding: 0px 0px 0px 10px;
 
     div {
       width: 2px;
-      height: 35px;
-      margin: 0px 10px 0px 40px;
+      height: 40px;
+      margin: 0px 10px 0px 10px;
       background-color: ${colors.white};
     }
 
     &:hover {
+      border: 2px solid ${colors.blueDark};
       background-color: ${colors.blueDark};
       transition: 0.3s;
       div {
@@ -52,38 +75,5 @@ export const Banner = styled.div`
         transition: 0.3s;
       }
     }
-  }
-
-  .divTitle {
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    right: 10%;
-
-    h1 {
-      font-size: 50px;
-    }
-  }
-
-  .divSubtitle {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    right: 10%;
-    width: 400px;
-
-    h4 {
-      font-size: 20px;
-      font-weight: lighter;
-
-      & + h4 {
-        margin-top: 10px;
-      }
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
   }
 `;
