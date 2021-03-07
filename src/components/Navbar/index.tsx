@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
               CONTATO
             </Link>
             <button>
-              AGENDE UM HORARIO
+              AGENDAMENTO ONLINE
               <div />
               <AiOutlineCalendar />
             </button>

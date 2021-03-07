@@ -15,7 +15,7 @@ const Appointment: React.FC = () => {
       </h1>
 
       <button>
-        AGENDE UM HORARIO <div />
+        AGENDE UM HORÁRIO <div />
         <AiOutlineCalendar />
       </button>
     </Container>

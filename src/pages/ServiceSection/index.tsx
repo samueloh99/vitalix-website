@@ -92,7 +92,7 @@ const ServiceSection: React.FC = () => {
                 here, content here, making it
               </h4>
               <button>
-                AGENDE UM HORARIO
+                AGENDE UM HORÁRIO
                 <div />
                 <AiOutlineCalendar />
               </button>
