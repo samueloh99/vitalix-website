@@ -39,7 +39,7 @@ export const HeaderContent = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1300px) {
     display: block;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -104,7 +104,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
     }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1300px) {
     position: absolute;
     top: 105px;
     left: ${({ click }) => (click ? 0 : '-200%')};
@@ -136,8 +136,30 @@ export const HeaderOptions = styled.div<NavBarProps>`
       }
     }
 
-    svg {
+    svg,
+    .facebookIcon,
+    .instaIcon {
       display: none;
+    }
+
+    button {
+      color: ${colors.black};
+      background: ${colors.blueshock};
+      width: 100%;
+      height: 100px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+
+      div {
+        width: 2px;
+        height: 100px;
+        background-color: ${colors.white};
+      }
+      svg {
+        display: flex;
+      }
     }
   }
 `;
@@ -148,7 +170,7 @@ export const LineSeparator = styled.div`
   height: 54px;
   margin: 0px 38px 0px 38px;
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1300px) {
     display: none;
   }
 `;
