@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-curly-newline */
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 
@@ -5,7 +6,7 @@ import { FaBars, FaTimes, FaInstagram, FaFacebookF } from 'react-icons/fa';
 
 import { AiOutlineCalendar } from 'react-icons/ai';
 
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import * as colors from '../../styles/colors';
 
@@ -34,7 +35,7 @@ const Navbar: React.FC = () => {
     <Container>
       <Header>
         <HeaderContent>
-          <Link onClick={closeMobileMenu} to="/">
+          <Link onClick={closeMobileMenu} smooth to="/path#top">
             <img src={logoImg} alt="logo" />
           </Link>
 
@@ -43,19 +44,70 @@ const Navbar: React.FC = () => {
           </MobileIcon>
 
           <HeaderOptions click={click}>
-            <Link onClick={closeMobileMenu} to="/" type="button">
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -200,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="#home"
+              type="button"
+            >
               HOME
             </Link>
-            <Link onClick={closeMobileMenu} to="/">
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -200,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="#infoSection"
+            >
               SOBRE NÓS
             </Link>
-            <Link onClick={closeMobileMenu} to="/">
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -100,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="#aboutTeam"
+            >
               NOSSA EQUIPE
             </Link>
-            <Link onClick={closeMobileMenu} to="/">
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -200,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="#serviceSection"
+            >
               TRATAMENTOS
             </Link>
-            <Link onClick={closeMobileMenu} to="/">
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -200,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="/"
+            >
               CONTATO
             </Link>
             <button>

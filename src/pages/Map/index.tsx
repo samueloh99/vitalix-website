@@ -16,7 +16,7 @@ const center = {
 const MapSection: React.FC = () => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: 'AIzaSyBmrsx58cx3YmcdCCcy2_HeEtCi-I7Teko',
-    libraries: ['places'],
+    libraries: undefined,
   });
 
   if (loadError) {

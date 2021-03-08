@@ -11,7 +11,7 @@ import img4 from '../../assets/img4.jpg';
 
 const InfoSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="infoSection">
       <DescriptionSection>
         <img src={logo} alt="logo" />
         <h4>

@@ -26,7 +26,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <Container className="slider">
+    <Container className="slider" id="home">
       <AiOutlineArrowLeft
         className="leftArrow"
         color="black"

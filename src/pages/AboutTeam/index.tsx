@@ -13,7 +13,7 @@ import * as colors from '../../styles/colors';
 
 const AboutTeam: React.FC = () => {
   return (
-    <Container>
+    <Container id="aboutTeam">
       <AboutUsSection>
         <h1>Conheça a nossa equipe</h1>
         <h4>

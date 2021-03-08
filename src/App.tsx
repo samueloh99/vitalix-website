@@ -1,7 +1,8 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable import/extensions */
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import GlobalStyle from './styles/global';
@@ -16,6 +17,12 @@ import MapSection from './pages/Map';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  }, [window.onbeforeunload]);
+
   return (
     <Router>
       <Navbar />
