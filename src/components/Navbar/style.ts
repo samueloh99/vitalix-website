@@ -15,7 +15,7 @@ export const Header = styled.header`
   background: ${colors.white};
   padding: 14px 135px 14px 135px;
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1300px) {
     padding: 0;
   }
 `;
@@ -29,7 +29,7 @@ export const HeaderContent = styled.div`
   a > img {
     height: 100px;
   }
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1300px) {
     img {
       margin-left: 10px;
     }

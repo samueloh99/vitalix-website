@@ -45,4 +45,17 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      flex-direction: column;
+    }
+
+    button {
+      margin: 30px 0px 0px 0px;
+    }
+  }
 `;

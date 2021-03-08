@@ -11,11 +11,20 @@ export const Container = styled.div`
   h1 {
     color: ${colors.blueDark};
   }
+
+  @media screen and (max-width: 1300px) {
+    padding: 0px 10px 0px 10px;
+  }
 `;
 
 export const Services = styled.div`
   display: flex;
   margin-top: 70px;
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ServiceOptions = styled.div`
@@ -55,6 +64,12 @@ export const ServiceContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 100px;
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 100px;
+    margin-left: 0;
+    text-align: center;
+  }
 `;
 
 export const ContentInfo = styled.div`
@@ -97,6 +112,23 @@ export const ContentInfo = styled.div`
   img {
     height: 200px;
   }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-top: 40px;
+      width: 300px;
+      height: 200px;
+    }
+  }
 `;
 
-export const ContentInfoDescription = styled.div``;
+export const ContentInfoDescription = styled.div`
+  @media screen and (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;

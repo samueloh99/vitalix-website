@@ -10,6 +10,10 @@ export const Container = styled.div`
   height: 300px;
   padding: 0px 160px 0px 160px;
   justify-content: space-between;
+
+  @media screen and (max-width: 1300px) {
+    padding: 0px 10px 0px 10px;
+  }
 `;
 
 export const FooterInfo = styled.div`
@@ -36,6 +40,12 @@ export const FooterInfoSection = styled.div`
     font-weight: lighter;
     font-size: 15px;
   }
+
+  @media screen and (max-width: 1300px) {
+    h4 {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const FooterEnd = styled.div`
@@ -50,5 +60,11 @@ export const FooterEnd = styled.div`
     color: ${colors.white};
     font-weight: lighter;
     font-size: 15px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    h4 {
+      font-size: 10px;
+    }
   }
 `;

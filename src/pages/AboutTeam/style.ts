@@ -7,6 +7,10 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 0px 160px 0px 160px;
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 10px 0px 10px;
+  }
 `;
 
 export const AboutUsSection = styled.div`
@@ -25,6 +29,16 @@ export const AboutUsSection = styled.div`
     margin-left: 10px;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 1300px) {
+    h4 {
+      margin: 0;
+      font-size: 15px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 export const DoctorsSection = styled.div`
@@ -33,6 +47,14 @@ export const DoctorsSection = styled.div`
   justify-content: space-between;
   margin-bottom: 200px;
   margin-top: 150px;
+
+  @media screen and (max-width: 1300px) {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const DoctorCard = styled.div`
@@ -105,5 +127,10 @@ export const DoctorCard = styled.div`
 
   svg {
     padding-left: 10px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 40px;
+    margin-right: 20px;
   }
 `;

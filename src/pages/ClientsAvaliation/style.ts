@@ -38,6 +38,10 @@ export const Container = styled.div`
       background: transparent;
     }
   }
+
+  @media screen and (max-width: 1300px) {
+    padding: 0px 10px 0px 10px;
+  }
 `;
 
 export const Card = styled.div`
