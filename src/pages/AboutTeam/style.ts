@@ -59,7 +59,7 @@ export const DoctorsSection = styled.div`
 
 export const DoctorCard = styled.div`
   text-align: left;
-  width: 240px;
+  width: 280px;
   cursor: pointer;
   position: relative;
 
@@ -105,10 +105,17 @@ export const DoctorCard = styled.div`
   }
 
   img {
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     display: block; /* no whitespace */
     transition: 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 1500px) {
+    width: 240px;
+    img {
+      height: 300px;
+    }
   }
 
   h1 {
