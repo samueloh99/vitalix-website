@@ -31,7 +31,7 @@ export const Container = styled.div`
     div {
       width: 2px;
       height: 40px;
-      margin: 0px 10px 0px 40px;
+      margin: 0px 10px 0px 10px;
       background-color: ${colors.white};
     }
 
