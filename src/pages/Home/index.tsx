@@ -62,11 +62,18 @@ const Home: React.FC = () => {
             <h4>{item.subtitle2}</h4>
             <h4>{item.subtitle3}</h4>
             <h4>{item.subtitle4}</h4>
-            <button>
-              AGENDAMENTO ONLINE
-              <div />
-              <AiOutlineCalendar />
-            </button>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              <button>
+                AGENDAMENTO ONLINE
+                <div />
+                <AiOutlineCalendar />
+              </button>
+            </a>
           </div>
         );
       })}

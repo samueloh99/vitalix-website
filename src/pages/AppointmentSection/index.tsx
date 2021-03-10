@@ -13,11 +13,17 @@ const Appointment: React.FC = () => {
       <h1>
         AGENDE JÁ SUA CONSULTA <p> GRÁTIS</p>
       </h1>
-
-      <button>
-        AGENDE UM HORÁRIO <div />
-        <AiOutlineCalendar />
-      </button>
+      <a
+        href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: 'none' }}
+      >
+        <button>
+          AGENDE UM HORÁRIO <div />
+          <AiOutlineCalendar />
+        </button>
+      </a>
     </Container>
   );
 };
