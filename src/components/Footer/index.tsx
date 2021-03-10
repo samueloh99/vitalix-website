@@ -9,7 +9,8 @@ const Footer: React.FC = () => {
     <Container>
       <FooterInfo>
         <FooterInfoSection>
-          <h4>R. Domingos de Morais, 2187 - Sala 411 - Vila Mariana</h4>
+          <h4>R. Domingos de Morais, 2187 - Bloco Paris</h4>
+          <h4>Conjunto 411 Vila Mariana</h4>
           <h4>11 5083-8884</h4>
           <h4>+55 11 94205-9930</h4>
           <h4 style={{ marginBottom: '0px' }}>Horario de Funcionamento:</h4>
