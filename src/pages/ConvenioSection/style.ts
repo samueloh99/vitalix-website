@@ -1,0 +1,38 @@
+import styled from 'styled-components';
+
+import * as colors from '../../styles/colors';
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 160px 0px 160px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h1 {
+    color: ${colors.blueDark};
+  }
+
+  div {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    img {
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 0 10px 0px 10px;
+
+    div {
+      display: inline-block;
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+`;

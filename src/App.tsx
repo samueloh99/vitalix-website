@@ -2,7 +2,7 @@
 /* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import GlobalStyle from './styles/global';
@@ -13,7 +13,7 @@ import AboutTeam from './pages/AboutTeam';
 import ServiceSection from './pages/ServiceSection';
 import ClientsAvaliation from './pages/ClientsAvaliation';
 import AppointmentSection from './pages/AppointmentSection';
-import MapSection from './pages/Map';
+import ConvenioSection from './pages/ConvenioSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -32,7 +32,7 @@ const App: React.FC = () => {
       <ServiceSection />
       <ClientsAvaliation />
       <AppointmentSection />
-      <MapSection />
+      <ConvenioSection />
       <Footer />
       <GlobalStyle />
     </Router>
