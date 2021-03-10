@@ -75,11 +75,9 @@ export const ServiceContent = styled.div`
 export const ContentInfo = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
 
   h4 {
     color: ${colors.black};
-    text-transform: uppercase;
   }
 
   button {
@@ -111,6 +109,7 @@ export const ContentInfo = styled.div`
 
   img {
     height: 200px;
+    margin: 40px 0px 0px 30px;
   }
 
   @media screen and (max-width: 1300px) {
@@ -126,6 +125,8 @@ export const ContentInfo = styled.div`
 `;
 
 export const ContentInfoDescription = styled.div`
+  max-width: 550px;
+
   @media screen and (max-width: 1300px) {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable react/button-has-type */
 /* eslint-disable no-unneeded-ternary */
 /* eslint-disable no-bitwise */
@@ -6,7 +7,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/no-array-index-key */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { AiOutlineCalendar } from 'react-icons/ai';
 
@@ -21,7 +22,7 @@ import {
   ContentInfoDescription,
 } from './style';
 
-import { ServiceData } from './Data';
+import { ServiceData, subtitleDatas, titleDatas } from './Data';
 
 import clareamentoDental from '../../assets/clareamentoDental.jpg';
 
@@ -29,8 +30,21 @@ import * as colors from '../../styles/colors';
 
 const ServiceSection: React.FC = () => {
   const [open, setOpen] = useState(-1);
+  const [type, setType] = useState('');
+  const [titleData, setTitleData] = useState('');
 
-  const toggleClick = (index: number) => {
+  useEffect(() => {
+    setTitleData('');
+  }, [type]);
+
+  const clickSubtitle = (subtitle: string) => {
+    setType(subtitle);
+  };
+
+  const toggleClick = (index: number, serviceData: string) => {
+    setTitleData(serviceData);
+    setType('');
+
     if (index === open) {
       setOpen(-1);
     } else {
@@ -52,54 +66,125 @@ const ServiceSection: React.FC = () => {
       />
       <Services>
         <ServiceOptions>
-          {ServiceData.map((serviceData, index) => (
-            <>
+          {ServiceData.map((serviceData, index) =>
+            serviceData.subtitle ? (
+              <>
+                <div
+                  onClick={() => toggleClick(index, serviceData.title)}
+                  key={index}
+                  style={{
+                    marginBottom: open === index ? '0px' : '10px',
+                    borderRadius: open === index ? '5px 5px 0px 0px' : '5px',
+                  }}
+                >
+                  {serviceData.title}
+                  {open === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                </div>
+                <div
+                  style={{
+                    display: open === index ? 'flex' : 'none',
+                    borderRadius: open === index ? '0px 0px 5px 5px' : '5px',
+                  }}
+                  className="info"
+                >
+                  {serviceData.subtitle?.map(
+                    (subtitle, indexData) =>
+                      subtitle && (
+                        <div
+                          key={indexData}
+                          onClick={() => clickSubtitle(subtitle)}
+                        >
+                          {subtitle}
+                        </div>
+                      ),
+                  )}
+                </div>
+              </>
+            ) : (
               <div
-                onClick={() => toggleClick(index)}
+                onClick={() => toggleClick(index, serviceData.title)}
                 key={index}
-                style={{
-                  marginBottom: open === index ? '0px' : '10px',
-                  borderRadius: open === index ? '5px 5px 0px 0px' : '5px',
-                }}
               >
                 {serviceData.title}
-                {open === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
               </div>
-              <div
-                style={{
-                  display: open === index ? 'flex' : 'none',
-                  borderRadius: open === index ? '0px 0px 5px 5px' : '5px',
-                }}
-                className="info"
-              >
-                {serviceData.subtitle?.map((subtitle, indexData) => (
-                  <div key={indexData}>{subtitle}</div>
-                ))}
-              </div>
-            </>
-          ))}
+            ),
+          )}
         </ServiceOptions>
         <ServiceContent>
-          <h1>Estética</h1>
-          <ContentInfo>
-            <ContentInfoDescription>
-              <h4 style={{ fontSize: '20px' }}>Clareamento Dental</h4>
-              <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using Content
-                here, content here, making it
-              </h4>
-              <button>
-                AGENDE UM HORÁRIO
-                <div />
-                <AiOutlineCalendar />
-              </button>
-            </ContentInfoDescription>
-            <img src={clareamentoDental} alt="img" />
-          </ContentInfo>
+          {subtitleDatas.map(
+            (item, index) =>
+              item.id === type && (
+                <div key={index}>
+                  <ContentInfo>
+                    <ContentInfoDescription>
+                      <h4 style={{ fontSize: '20px' }}>{item.id}</h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc1}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc2}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc3}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc4}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc5}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc6}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc7}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc8}
+                      </h4>
+                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                        {item.desc9}
+                      </h4>
+                      <button>
+                        AGENDE UM HORÁRIO
+                        <div />
+                        <AiOutlineCalendar />
+                      </button>
+                    </ContentInfoDescription>
+                    {/* <img src={clareamentoDental} alt="img" /> */}
+                  </ContentInfo>
+                </div>
+              ),
+          )}
         </ServiceContent>
+        {titleDatas.map(
+          (item, index) =>
+            item.title === titleData && (
+              <div key={index}>
+                <ContentInfo>
+                  <ContentInfoDescription>
+                    <h4 style={{ fontSize: '20px' }}>{item.title}</h4>
+                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      {item.desc1}
+                    </h4>
+                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      {item.desc2}
+                    </h4>
+                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      {item.desc3}
+                    </h4>
+
+                    <button>
+                      AGENDE UM HORÁRIO
+                      <div />
+                      <AiOutlineCalendar />
+                    </button>
+                  </ContentInfoDescription>
+                  {/* <img src={clareamentoDental} alt="img" /> */}
+                </ContentInfo>
+              </div>
+            ),
+        )}
       </Services>
     </Container>
   );

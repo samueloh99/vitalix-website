@@ -96,7 +96,7 @@ export const ModalOuvidoria: React.FC<ModalOuvidoriaProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            Save
+            ENVIAR
           </a>
         </form>
       </div>
