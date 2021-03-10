@@ -20,7 +20,7 @@ export const Container = styled.div`
     justify-content: space-between;
 
     img {
-      height: 100px;
+      height: 200px;
     }
   }
 
@@ -29,6 +29,7 @@ export const Container = styled.div`
 
     div {
       display: inline-block;
+      text-align: center;
 
       img {
         margin-left: 10px;
