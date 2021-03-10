@@ -62,6 +62,7 @@ export const DoctorCard = styled.div`
   width: 280px;
   cursor: pointer;
   position: relative;
+  border-radius: 10px;
 
   display: inline-block; /* shrink wrap to image */
   overflow: hidden; /* hide the excess */

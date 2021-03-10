@@ -1,8 +1,11 @@
-import React from 'react';
+/* eslint-disable react/no-array-index-key */
+import React, { useState } from 'react';
 
 import { BsArrowRight } from 'react-icons/bs';
 
 import { Container, AboutUsSection, DoctorsSection, DoctorCard } from './style';
+
+import { Modal } from '../../components/Modal';
 
 import dr1 from '../../assets/daran.jpg';
 import dr2 from '../../assets/debora.jpg';
@@ -11,7 +14,35 @@ import dr4 from '../../assets/wagner.jpg';
 
 import * as colors from '../../styles/colors';
 
+const drsModal = [
+  { id: 1, img: dr1, crops: 'CROSP: 1145580', name: 'Dr. Daran torres Elias' },
+  {
+    id: 2,
+    img: dr2,
+    crops: 'CROSP: 98.204',
+    name: 'Dra. Débora Helena Monteiro Pereira',
+  },
+  { id: 3, img: dr3, crops: 'CROSP: 118467', name: 'Dra. Suji Cha' },
+  {
+    id: 4,
+    img: dr4,
+    crops: 'CROSP: 112771',
+    name: 'Dr. Wagner Francisco Pinto',
+  },
+];
+
 const AboutTeam: React.FC = () => {
+  const [isModalOpen, setModalState] = useState(false);
+  const [idModal, setIdModal] = useState(0);
+
+  const toogleModal = () => {
+    setModalState(!isModalOpen);
+  };
+
+  const toogleIdModal = (id: number) => {
+    setIdModal(id);
+  };
+
   return (
     <Container id="aboutTeam">
       <AboutUsSection>
@@ -30,32 +61,26 @@ const AboutTeam: React.FC = () => {
         </h4>
       </AboutUsSection>
       <DoctorsSection>
-        <DoctorCard>
-          <img src={dr1} alt="dr1" />
-          <h4>CROSP: 1145580</h4>
-          <h1>Dr. Daran torres Elias</h1>
-          <BsArrowRight color={colors.black} size={40} />
-          <div className="gradientDown" />
-        </DoctorCard>
-        <DoctorCard>
-          <img src={dr2} alt="dr2" />
-          <h4>CROSP: 98.204</h4>
-          <h1>Dra. Débora Helena Monteiro Pereira</h1>
-          <BsArrowRight color={colors.black} size={40} />
-        </DoctorCard>
-        <DoctorCard>
-          <img src={dr3} alt="dr3" />
-          <h4>CROSP: 118467</h4>
-          <h1>Dra. Suji Cha</h1>
-          <BsArrowRight color={colors.black} size={40} />
-        </DoctorCard>
-        <DoctorCard>
-          <img src={dr4} alt="dr4" />
-          <h4>CROSP: 112771</h4>
-          <h1>Dr. Wagner Francisco Pinto</h1>
-          <BsArrowRight color={colors.black} size={40} />
-        </DoctorCard>
+        {drsModal.map((item, index) => {
+          const { id } = item;
+          return (
+            <DoctorCard
+              key={index}
+              onClick={() => {
+                toogleModal();
+                toogleIdModal(id);
+              }}
+            >
+              <img src={item.img} alt="dr1" />
+              <h4>{item.crops}</h4>
+              <h1>{item.name}</h1>
+              <BsArrowRight color={colors.black} size={40} />
+              <div className="gradientDown" />
+            </DoctorCard>
+          );
+        })}
       </DoctorsSection>
+      <Modal isOpen={isModalOpen} id={idModal} onClose={toogleModal} />
     </Container>
   );
 };

@@ -116,7 +116,12 @@ const Navbar: React.FC = () => {
               <AiOutlineCalendar />
             </button>
             <LineSeparator />
-            <a className="instaIcon" href="/">
+            <a
+              className="instaIcon"
+              href="https://www.instagram.com/odontovitalix"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram
                 size={20}
                 onMouseOver={() => setOverFirstImg(true)}
@@ -124,7 +129,12 @@ const Navbar: React.FC = () => {
                 color={overFirstImg ? colors.blueshock : colors.black}
               />
             </a>
-            <a className="facebookIcon" href="/">
+            <a
+              className="facebookIcon"
+              href="https://www.facebook.com/odontovitalix"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF
                 size={20}
                 onMouseOver={() => setOverSecondImg(true)}
