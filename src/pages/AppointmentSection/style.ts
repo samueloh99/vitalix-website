@@ -19,7 +19,7 @@ export const Container = styled.div`
     }
   }
 
-  button {
+  .buttonCustomized {
     color: ${colors.white};
     margin-left: 80px;
     background: transparent;
@@ -52,9 +52,10 @@ export const Container = styled.div`
 
     h1 {
       flex-direction: column;
+      font-size: 25px;
     }
 
-    button {
+    .buttonCustomized {
       margin: 30px 0px 0px 0px;
     }
   }

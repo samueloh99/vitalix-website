@@ -14,6 +14,7 @@ import ServiceSection from './pages/ServiceSection';
 import ClientsAvaliation from './pages/ClientsAvaliation';
 import AppointmentSection from './pages/AppointmentSection';
 import ConvenioSection from './pages/ConvenioSection';
+import OuvidoriaSection from './pages/OuvidoriaSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -33,6 +34,7 @@ const App: React.FC = () => {
       <ClientsAvaliation />
       <AppointmentSection />
       <ConvenioSection />
+      <OuvidoriaSection />
       <Footer />
       <GlobalStyle />
     </Router>

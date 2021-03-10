@@ -58,10 +58,9 @@ export const HeaderOptions = styled.div<NavBarProps>`
   align-items: center;
   text-align: center;
 
-  button {
+  .buttonCustomized {
     color: ${colors.white};
     margin-left: 15px;
-    border: none;
     background: ${colors.blueshock};
     padding: 0px 10px 0px 40px;
     display: flex;
@@ -76,6 +75,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
 
     &:hover {
       background-color: ${colors.blueDark};
+      color: ${colors.white};
       transition: 0.3s;
       div {
         background-color: ${colors.blueDark};
@@ -95,7 +95,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
     }
 
     &:hover {
-      color: ${colors.blueshock};
+      color: ${colors.white};
       transition: all 0.3s ease;
     }
 
@@ -142,7 +142,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
       display: none;
     }
 
-    button {
+    .buttonCustomized {
       color: ${colors.black};
       background: ${colors.blueshock};
       width: 100%;
@@ -151,14 +151,21 @@ export const HeaderOptions = styled.div<NavBarProps>`
       padding: 0;
       text-align: center;
       justify-content: center;
+      border: none;
+      border: 1px solid black;
+      border-bottom: 2px solid black;
 
       div {
         width: 2px;
         height: 100px;
-        background-color: ${colors.white};
+        background-color: ${colors.black};
       }
       svg {
         display: flex;
+      }
+
+      &:hover {
+        border: none;
       }
     }
   }

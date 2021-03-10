@@ -63,16 +63,15 @@ const Home: React.FC = () => {
             <h4>{item.subtitle3}</h4>
             <h4>{item.subtitle4}</h4>
             <a
+              className="buttonCustomized"
               href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: 'none' }}
             >
-              <button>
-                AGENDAMENTO ONLINE
-                <div />
-                <AiOutlineCalendar />
-              </button>
+              AGENDAMENTO ONLINE
+              <div />
+              <AiOutlineCalendar />
             </a>
           </div>
         );

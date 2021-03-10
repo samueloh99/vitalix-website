@@ -49,7 +49,7 @@ export const Container = styled.div`
     z-index: -10;
   }
 
-  button {
+  .buttonCustomized {
     color: ${colors.white};
     background: ${colors.blueshock};
     border: 2px solid ${colors.blueshock};

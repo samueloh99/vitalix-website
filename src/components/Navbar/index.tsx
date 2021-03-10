@@ -111,15 +111,14 @@ const Navbar: React.FC = () => {
               CONTATO
             </Link>
             <a
+              className="buttonCustomized"
               href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>
-                AGENDAMENTO ONLINE
-                <div />
-                <AiOutlineCalendar />
-              </button>
+              AGENDAMENTO ONLINE
+              <div />
+              <AiOutlineCalendar />
             </a>
             <LineSeparator />
             <a
