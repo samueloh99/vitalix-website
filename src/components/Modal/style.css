@@ -22,8 +22,8 @@
 
 .modalDrCard__box {
   position: relative;
-  width: 60%;
-  height: 530px;
+  width: 700px;
+  height: 500px;
   margin: 0 10%;
   padding: 50px;
   box-sizing: border-box;
@@ -40,7 +40,7 @@
 .modalDrCard__content {
   color: #6b6b6b;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .modalDrCard__close {
