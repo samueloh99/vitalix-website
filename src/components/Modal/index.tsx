@@ -27,7 +27,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, id }) => {
   };
 
   return isOpen ? (
-    <div className="modal">
+    <div className="modalDrCard">
       <div
         ref={outsideRef}
         className="modal__overlay"
@@ -37,15 +37,24 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, id }) => {
         (item, index) =>
           item.id === id && (
             // eslint-disable-next-line react/no-array-index-key
-            <div key={index} className="modal__box">
-              <button className="modal__close" onClick={onClose}>
+            <div key={index} className="modalDrCard__box">
+              <button className="modalDrCard__close" onClick={onClose}>
                 <IoMdClose />
               </button>
-              <div className="modal__title">{item.name}</div>
-              <div className="modal__content">{item.desc1}</div>
-              <div className="modal__content">{item.desc2}</div>
-              <div className="modal__content">{item.desc3}</div>
-              <div className="modal__content">{item.desc4}</div>
+              <div className="modalDrCard__title">{item.name}</div>
+              <div
+                className="modalDrCard__content"
+                style={{ marginTop: '30px' }}
+              >
+                {item.desc1}
+              </div>
+              <div className="modalDrCard__content">{item.desc2}</div>
+              <div className="modalDrCard__content">{item.desc3}</div>
+              <div className="modalDrCard__content">{item.desc4}</div>
+              <div className="modalDrCard__content">{item.desc5}</div>
+              <div className="modalDrCard__content">{item.desc6}</div>
+              <div className="modalDrCard__content">{item.desc7}</div>
+              <div className="modalDrCard__content">{item.desc8}</div>
             </div>
           ),
       )}

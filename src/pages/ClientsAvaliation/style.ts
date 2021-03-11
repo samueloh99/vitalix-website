@@ -14,8 +14,6 @@ export const Container = styled.div`
   }
 
   .carouselContainer {
-    z-index: -1;
-
     margin-top: 100px;
 
     button.rec-dot {
@@ -43,6 +41,12 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1300px) {
     padding: 0px 10px 0px 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .linhaAzul {
+      display: none;
+    }
   }
 `;
 

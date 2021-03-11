@@ -1,4 +1,4 @@
-.modal {
+.modalDrCard {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +7,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  z-index: 1000;
 }
 
 .modal__overlay {
@@ -19,10 +20,10 @@
   cursor: pointer;
 }
 
-.modal__box {
+.modalDrCard__box {
   position: relative;
-  width: 80%;
-  height: 630px;
+  width: 60%;
+  height: 530px;
   margin: 0 10%;
   padding: 50px;
   box-sizing: border-box;
@@ -31,18 +32,18 @@
   cursor: auto;
 }
 
-.modal__title {
+.modalDrCard__title {
   color: #00c9ff;
   font-size: 30px;
 }
 
-.modal__content {
-  margin-top: 30px;
+.modalDrCard__content {
   color: #6b6b6b;
   font-size: 16px;
+  margin-top: 10px;
 }
 
-.modal__close {
+.modalDrCard__close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -50,10 +51,20 @@
   background: transparent;
 }
 
-@media screen and (min-width: 800px) {
-  .modal__box {
-    max-width: 900px;
+@media screen and (max-width: 800px) {
+  .modalDrCard__box {
+    margin: 0;
+    padding: 50px 10px 0px 10px;
     height: 400px;
-    margin: 0 30px;
+    width: 250px;
+    z-index: 10;
+  }
+
+  .modalDrCard__title {
+    font-size: 17px;
+  }
+
+  .modalDrCard__content {
+    font-size: 10px;
   }
 }

@@ -15,19 +15,19 @@ import dr4 from '../../assets/wagner.jpg';
 import * as colors from '../../styles/colors';
 
 const drsModal = [
-  { id: 1, img: dr1, crops: 'CROSP: 1145580', name: 'Dr. Daran torres Elias' },
   {
-    id: 2,
+    id: 1,
+    img: dr4,
+    crops: 'CROSP: 112771',
+    name: 'Dr. Wagner Franciscon Pinto',
+  },
+  { id: 2, img: dr3, crops: 'CROSP: 118467', name: 'Dra. Suji Cha' },
+  { id: 3, img: dr1, crops: 'CROSP: 1145580', name: 'Dr. Daran torres Elias' },
+  {
+    id: 4,
     img: dr2,
     crops: 'CROSP: 98.204',
     name: 'Dra. Débora Helena Monteiro Pereira',
-  },
-  { id: 3, img: dr3, crops: 'CROSP: 118467', name: 'Dra. Suji Cha' },
-  {
-    id: 4,
-    img: dr4,
-    crops: 'CROSP: 112771',
-    name: 'Dr. Wagner Francisco Pinto',
   },
 ];
 
@@ -52,7 +52,7 @@ const AboutTeam: React.FC = () => {
           especialidade, onde atendemos os pacientes com maior dedicação e
           empenho. Aqui, trabalhamos com o que há de mais moderno em
           instalações, equipamentos, materiais e suporte para o desempenho de
-          suas atividades. A clínica se apresenta uma fácil localização na
+          suas atividades. A clínica se apresenta com uma fácil localização na
           região da Vila Mariana, situando-se próximo aos transportes públicos
           como os pontos de ônibus na região e principalmente próximo à estação
           Santa Cruz; além disso, facilitamos o acesso dos clientes, oferecendo

@@ -49,6 +49,10 @@ export const Container = styled.div`
     z-index: -10;
   }
 
+  .mobileImg {
+    display: none;
+  }
+
   .buttonCustomized {
     color: ${colors.white};
     background: ${colors.blueshock};
@@ -74,6 +78,33 @@ export const Container = styled.div`
         background-color: ${colors.blueDark};
         transition: 0.3s;
       }
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .slide {
+      display: inline-block;
+      text-align: center;
+
+      h1 {
+        font-size: 30px;
+        margin: 80px 15px 0px 15px;
+      }
+      h4 {
+        font-size: 17px;
+        margin: 0px 50px 5px 50px;
+      }
+      a {
+        margin: 40px;
+      }
+    }
+    .desktopImg {
+      display: none;
+    }
+    .mobileImg {
+      display: flex;
+      position: absolute;
+      z-index: -10;
     }
   }
 `;

@@ -89,13 +89,14 @@ export const HeaderOptions = styled.div<NavBarProps>`
     border: 0;
     text-decoration: none;
     color: ${colors.black};
+    font-weight: lighter;
 
     & + a {
       margin-left: 20px;
     }
 
     &:hover {
-      color: ${colors.white};
+      color: ${colors.blueshock};
       transition: all 0.3s ease;
     }
 

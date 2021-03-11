@@ -48,7 +48,12 @@ const Home: React.FC = () => {
             key={index}
             style={{ transform: `translate(${x}%)` }}
           >
-            <img src={item.image} alt={item.title} />
+            <img className="desktopImg" src={item.image} alt={item.title} />
+            <img
+              className="mobileImg"
+              src={item.imageMobile}
+              alt={item.title}
+            />
             <h1>{item.title}</h1>
             <div
               style={{

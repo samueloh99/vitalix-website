@@ -4,9 +4,16 @@ import banner3 from '../../assets/Banner Implantes Dentarios.jpg';
 import banner4 from '../../assets/Banner Lentes de Contato.jpg';
 import banner5 from '../../assets/Banner Ortodontia.jpg';
 
+import banner1Mobile from '../../assets/Banner-Clareamento(mobile).jpg';
+import banner2Mobile from '../../assets/Banner-Harmonizacao(mobile).jpg';
+import banner3Mobile from '../../assets/Banner-Implante(mobile).jpg';
+import banner4Mobile from '../../assets/Banner-Lente-de-Contato(mobile).jpg';
+import banner5Mobile from '../../assets/Banner-Ortodontia(mobile).jpg';
+
 export const SliderData = [
   {
     image: banner1,
+    imageMobile: banner1Mobile,
     title: 'Clareamento Dental',
     subtitle1:
       '-Tratamento estético realizado com resultados excelentes em pouco tempo',
@@ -16,6 +23,7 @@ export const SliderData = [
   },
   {
     image: banner2,
+    imageMobile: banner2Mobile,
     title: 'Harmonização Facial',
     subtitle1: '-Preenchimento labiais, bigode chinês, linha de marionete',
     subtitle2:
@@ -23,6 +31,7 @@ export const SliderData = [
   },
   {
     image: banner3,
+    imageMobile: banner3Mobile,
     title: 'Implantes Dentários',
     subtitle1:
       '-Um pino de titânio que substituiu as raízes dos dentes perdidos',
@@ -33,6 +42,7 @@ export const SliderData = [
   },
   {
     image: banner4,
+    imageMobile: banner4Mobile,
     title: 'Lentes de Contatos',
     subtitle1: '-Trabalhos com um melhor resultado estético',
     subtitle2: '-Estabilidade/Sem alteração da cor final desejada',
@@ -41,6 +51,7 @@ export const SliderData = [
   },
   {
     image: banner5,
+    imageMobile: banner5Mobile,
     title: 'Ortodontia',
     subtitle1: '-Ortodontia mais moderna, rápida e estética',
     subtitle2: '-Invisalign',

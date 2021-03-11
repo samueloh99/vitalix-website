@@ -11,7 +11,7 @@ import unimed from '../../assets/unimed.png';
 
 const ConvenioSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="convenio">
       <h1>Convênios</h1>
       <div>
         <img src={amil} alt="amil" />

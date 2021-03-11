@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const DescriptionSection = styled.div`
   display: flex;
   margin-top: 30px;
+  margin-bottom: 30px;
   align-items: center;
 
   img {
@@ -26,7 +27,7 @@ export const DescriptionSection = styled.div`
   h4 {
     color: ${colors.black};
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 1300px) {

@@ -56,11 +56,11 @@ const ServiceSection: React.FC = () => {
     <Container id="serviceSection">
       <h1>Conheça nossos tratamentos</h1>
       <div
+        className="linhaAzul"
         style={{
           width: '165px',
           height: '3px',
           backgroundColor: colors.blueshock,
-          marginLeft: '250px',
           marginTop: '5px',
         }}
       />

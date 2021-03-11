@@ -30,6 +30,7 @@ function ClientsAvaliation () {
     <Container>
       <h1>O que dizem sobre nós</h1>
       <div
+        className="linhaAzul"
         style={{
           width: '165px',
           height: '3px',

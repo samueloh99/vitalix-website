@@ -140,5 +140,6 @@ export const DoctorCard = styled.div`
   @media screen and (max-width: 1300px) {
     margin-bottom: 40px;
     margin-right: 20px;
+    z-index: 1;
   }
 `;

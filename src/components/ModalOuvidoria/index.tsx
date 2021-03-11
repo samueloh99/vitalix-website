@@ -38,7 +38,7 @@ export const ModalOuvidoria: React.FC<ModalOuvidoriaProps> = ({
 
   const [msg, setMsg] = useState('');
 
-  const linkWpp = `https://api.whatsapp.com/send?phone=5511942059930&text=${msg}`;
+  const linkWpp = `https://api.whatsapp.com/send?phone=5511985165678&text=${msg}`;
 
   return isOpen ? (
     <div className="modal">
@@ -53,36 +53,7 @@ export const ModalOuvidoria: React.FC<ModalOuvidoriaProps> = ({
         </button>
         <div className="modal__title">Ouvidoria, deixe seu feedback.</div>
         <form>
-          {/* <div className="formInputsDiv">
-            <label className="lablNames" htmlFor="name">
-              Nome
-            </label>
-            <input
-              ref={register({ required: true })}
-              id="name"
-              name="name"
-              type="text"
-            />
-            {errors.firstname && <div className="error">Enter your name</div>}
-          </div> */}
-          {/* <div className="formInputsDiv">
-            <label className="lablNames" htmlFor="email">
-              Email
-            </label>
-            <input
-              ref={register({ required: true })}
-              id="email"
-              name="email"
-              type="email"
-            />
-            {errors.lastname && (
-              <div className="error">Enter your last name</div>
-            )}
-          </div> */}
           <div className="formInputsDiv">
-            <label className="lablNames" htmlFor="age">
-              Descrição
-            </label>
             <textarea
               className="textareaForm"
               id="age"

@@ -106,9 +106,9 @@ const Navbar: React.FC = () => {
                 })
               }
               onClick={closeMobileMenu}
-              to="/"
+              to="#convenio"
             >
-              CONTATO
+              CONVÊNIO
             </Link>
             <a
               className="buttonCustomized"

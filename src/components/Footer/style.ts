@@ -27,6 +27,13 @@ export const FooterInfo = styled.div`
     height: 150px;
     right: auto;
   }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    img {
+      height: 100px;
+    }
+  }
 `;
 
 export const FooterInfoSection = styled.div`
@@ -42,6 +49,7 @@ export const FooterInfoSection = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
+    margin-bottom: 10px;
     h4 {
       font-size: 12px;
     }

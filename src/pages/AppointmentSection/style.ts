@@ -52,7 +52,7 @@ export const Container = styled.div`
 
     h1 {
       flex-direction: column;
-      font-size: 25px;
+      font-size: 20px;
     }
 
     .buttonCustomized {
