@@ -13,15 +13,6 @@ export const Container = styled.div`
   overflow: hidden;
   position: relative;
 
-  .overlayTitle {
-    width: 720px;
-    height: 130px;
-    background: lightgray;
-    position: absolute;
-    top: 218px;
-    opacity: 0.7;
-  }
-
   .slide {
     display: flex;
     min-width: 100%;

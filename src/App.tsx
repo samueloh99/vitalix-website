@@ -9,8 +9,9 @@ import GlobalStyle from './styles/global';
 
 import Home from './pages/Home';
 import InfoSection from './pages/InfoSection';
-import AboutTeam from './pages/AboutTeam';
+// import AboutTeam from './pages/AboutTeam';
 import ServiceSection from './pages/ServiceSection';
+import AboutOffice from './pages/AboutOffice';
 import ClientsAvaliation from './pages/ClientsAvaliation';
 import AppointmentSection from './pages/AppointmentSection';
 import ConvenioSection from './pages/ConvenioSection';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
       <Navbar />
       <Home />
       <InfoSection />
+      <AboutOffice />
       {/* <AboutTeam /> */}
       <ServiceSection />
       <ClientsAvaliation />
