@@ -12,14 +12,14 @@ export const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     margin-top: 100px;
     margin-bottom: 100px;
   }
 `;
 
 export const CardContainer = styled.div`
-  width: 250px;
+  width: 300px;
   height: 300px;
   position: relative;
 
@@ -50,13 +50,15 @@ export const CardFront = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${colors.white};
-  background-image: linear-gradient(
-    166deg,
-    rgba(0, 201, 255, 1) 0%,
-    rgba(162, 181, 205, 1) 60%
-  );
+  color: ${colors.black};
+  background: ${colors.white};
   border-radius: 10px;
+
+  h1 {
+    text-shadow: 0 1px 0 #b5b5b5, -1px 2px 1px #bfbfbf, -2px 4px 1px #c7c7c7,
+      -4px 6px 1px #d4d4d4, -6px 8px 1px #e6e6e6;
+    color: #707070;
+  }
 `;
 
 export const CardBack = styled.div`
@@ -65,19 +67,32 @@ export const CardBack = styled.div`
   display: flex;
   position: absolute;
   backface-visibility: hidden;
-  background: ${colors.blueshock};
+  background: ${colors.blueDark};
   transform: rotateY(180deg);
   text-align: center;
   align-items: center;
   padding: 30px;
   font-size: 17px;
   border-radius: 10px;
+  color: ${colors.white};
 
   ul {
     display: inline-block;
     text-align: start;
     li {
       margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    padding: 10px;
+    h4 {
+      font-size: 14px;
+    }
+    ul {
+      li {
+        font-size: 15px;
+      }
     }
   }
 `;
