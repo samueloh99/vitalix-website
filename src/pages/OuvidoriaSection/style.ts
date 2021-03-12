@@ -9,12 +9,19 @@ export const Container = styled.div`
   padding: 0px 160px 0px 160px;
   margin-bottom: 100px;
 
+  h1 {
+    font-size: 30px;
+    color: ${colors.grey};
+    margin-bottom: 30px;
+  }
+
   form {
     justify-content: start;
     width: 300px;
 
     label {
       color: ${colors.black};
+      margin: 0px 0px 10px 0px;
     }
 
     input {
@@ -69,7 +76,8 @@ export const Container = styled.div`
   @media screen and (max-width: 1000px) {
     flex-direction: column;
     padding: 0px 10px 0px 10px;
-    height: 120vh;
+    height: 130vh;
+    align-items: start;
 
     img {
       width: 300px;

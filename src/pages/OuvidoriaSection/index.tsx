@@ -15,6 +15,7 @@ const OuvidoriaSection: React.FC = () => {
   return (
     <Container>
       <div>
+        <h1>Fale Conosco</h1>
         <form>
           <label htmlFor="fname">Nome</label>
           <input type="text" id="fname" name="nome" />
