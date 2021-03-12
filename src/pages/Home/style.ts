@@ -13,6 +13,15 @@ export const Container = styled.div`
   overflow: hidden;
   position: relative;
 
+  .overlayTitle {
+    width: 720px;
+    height: 130px;
+    background: lightgray;
+    position: absolute;
+    top: 218px;
+    opacity: 0.7;
+  }
+
   .slide {
     display: flex;
     min-width: 100%;
@@ -30,6 +39,8 @@ export const Container = styled.div`
       margin: 0px 100px 10px 100px;
       font-weight: lighter;
       font-size: 20px;
+      width: 600px;
+      z-index: 10;
     }
   }
 
@@ -59,7 +70,7 @@ export const Container = styled.div`
     border: 2px solid ${colors.blueshock};
     display: flex;
     align-items: center;
-    width: 240px;
+    width: 255px;
     margin: 100px 0px 0px 100px;
     padding: 0px 0px 0px 10px;
 

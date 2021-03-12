@@ -7,7 +7,6 @@ import { Container, AboutUsSection, DoctorsSection, DoctorCard } from './style';
 
 import { Modal } from '../../components/Modal';
 
-import dr1 from '../../assets/daran.jpg';
 import dr2 from '../../assets/debora.jpg';
 import dr3 from '../../assets/suji.jpg';
 import dr4 from '../../assets/wagner.jpg';
@@ -22,7 +21,6 @@ const drsModal = [
     name: 'Dr. Wagner Franciscon Pinto',
   },
   { id: 2, img: dr3, crops: 'CROSP: 118467', name: 'Dra. Suji Cha' },
-  { id: 3, img: dr1, crops: 'CROSP: 1145580', name: 'Dr. Daran torres Elias' },
   {
     id: 4,
     img: dr2,

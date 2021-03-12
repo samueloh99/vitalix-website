@@ -18,7 +18,7 @@ const OuvidoriaSection: React.FC = () => {
   return (
     <Container>
       <Container id="appointmentSection">
-        <h1>Queremos ouvir um FEEDBACK seu</h1>
+        <h1>QUEREMOS OUVIR A SUA OPINIÃO</h1>
         <div onClick={toogleModal} className="buttonCustomized">
           OUVIDORIA <div />
           <VscFeedback />

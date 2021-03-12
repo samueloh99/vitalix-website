@@ -29,7 +29,7 @@ const App: React.FC = () => {
       <Navbar />
       <Home />
       <InfoSection />
-      <AboutTeam />
+      {/* <AboutTeam /> */}
       <ServiceSection />
       <ClientsAvaliation />
       <AppointmentSection />

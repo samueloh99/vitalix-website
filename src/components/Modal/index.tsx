@@ -54,7 +54,6 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, id }) => {
               <div className="modalDrCard__content">{item.desc5}</div>
               <div className="modalDrCard__content">{item.desc6}</div>
               <div className="modalDrCard__content">{item.desc7}</div>
-              <div className="modalDrCard__content">{item.desc8}</div>
             </div>
           ),
       )}

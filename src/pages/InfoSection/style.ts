@@ -2,75 +2,71 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  padding: 0px 160px 0px 160px;
-
-  @media screen and (max-width: 1300px) {
-    padding: 0;
-    margin: 0;
-  }
-`;
-
-export const DescriptionSection = styled.div`
+  height: 60vh;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding: 0px 160px 0px 160px;
+`;
 
-  img {
-    height: 200px;
-    margin-right: 30px;
-  }
+export const CardContainer = styled.div`
+  width: 250px;
+  height: 300px;
+  position: relative;
+`;
 
-  h4 {
-    color: ${colors.black};
-    font-weight: lighter;
-    font-size: 16px;
-  }
+export const Card = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 
-  @media screen and (max-width: 1300px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
-
-    img {
-      width: 200px;
-      height: 200px;
-      padding: 0;
-      margin: 0;
-    }
-
-    h4 {
-      font-size: 15px;
-    }
+  &:hover {
+    transform: rotateY(180deg);
   }
 `;
 
-export const ImgSection = styled.div`
+export const CardFront = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: ${colors.white};
+  background-image: linear-gradient(
+    166deg,
+    rgba(0, 201, 255, 1) 0%,
+    rgba(162, 181, 205, 1) 60%
+  );
+  border-radius: 10px;
+`;
+
+export const CardBack = styled.div`
   width: 100%;
-  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  backface-visibility: hidden;
+  background: ${colors.blueshock};
+  transform: rotateY(180deg);
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 17px;
+  border-radius: 10px;
 
-  img {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-
-  @media screen and (max-width: 1300px) {
+  ul {
     display: inline-block;
-    text-align: center;
-
-    img {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      padding: 0;
+    text-align: start;
+    li {
+      margin-bottom: 10px;
     }
   }
 `;

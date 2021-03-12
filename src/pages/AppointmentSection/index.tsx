@@ -10,9 +10,7 @@ import { Container } from './style';
 const Appointment: React.FC = () => {
   return (
     <Container id="appointmentSection">
-      <h1>
-        AGENDE JÁ SUA CONSULTA <p> GRÁTIS</p>
-      </h1>
+      <h1>AGENDE JÁ SUA CONSULTA</h1>
       <a
         className="buttonCustomized"
         href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."

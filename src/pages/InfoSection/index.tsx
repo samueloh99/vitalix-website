@@ -1,37 +1,55 @@
 import React from 'react';
 
-import { Container, DescriptionSection, ImgSection } from './style';
-
-import logo from '../../assets/logo.png';
-import img3 from '../../assets/img3.jpg';
-import img7 from '../../assets/img7.jpg';
-import img6 from '../../assets/img6.jpg';
-import img2 from '../../assets/img2.jpg';
-import img4 from '../../assets/img4.jpg';
+import { Container, CardContainer, Card, CardFront, CardBack } from './style';
 
 const InfoSection: React.FC = () => {
   return (
-    <Container id="infoSection">
-      <DescriptionSection>
-        <img src={logo} alt="logo" />
-        <h4>
-          A Vitalix Odontologia surgiu há 3 anos atrás a fim de praticar uma
-          odontologia mais humanizada, harmônica, acolhedora e ética.A clínica
-          nasceu com o intuito de compartilhar do melhor que a Odontologia atual
-          têm para oferecer aos pacientes, como por exemplo as diversar
-          transformações de sorrisos e até mesmo as mudanças de vida que ocorrem
-          após os tratamentos, incluindo aproveitar pequenos momentos especiais
-          de compartilhamento das experiências vividas entre os profissionais e
-          os pacientes.
-        </h4>
-      </DescriptionSection>
-      <ImgSection>
-        <img src={img3} alt="logo" />
-        <img src={img7} alt="logo" />
-        <img src={img6} alt="logo" />
-        <img src={img2} alt="logo" />
-        <img src={img4} alt="logo" />
-      </ImgSection>
+    <Container>
+      <CardContainer>
+        <Card className="card">
+          <CardFront>
+            <h1>MISSÃO</h1>
+          </CardFront>
+          <CardBack>
+            <h4>
+              Proporcionar uma Odontologia humanizada e de excelência, focada no
+              acolhimento ao atendimento, dedicação e o empenho em melhorar a
+              qualidade de vida dos nossos pacientes.
+            </h4>
+          </CardBack>
+        </Card>
+      </CardContainer>
+      <CardContainer>
+        <Card className="card">
+          <CardFront>
+            <h1>VISÃO</h1>
+          </CardFront>
+          <CardBack>
+            <h4>
+              Sermos reconhecidos pela excelência no atendimento odontológico
+              dentro das diversas atualidades da profissão e compartilhar o
+              melhor que a Odontologia atual dispõe para assegurar qualidade no
+              atendimento.
+            </h4>
+          </CardBack>
+        </Card>
+      </CardContainer>
+      <CardContainer>
+        <Card className="card">
+          <CardFront>
+            <h1>VALOR</h1>
+          </CardFront>
+          <CardBack>
+            <ul>
+              <li>Ética odontológica;</li>
+              <li>Respeito à diversidade; </li>
+              <li>Capacitação e valorização da equipe; </li>
+              <li>Transparência gerencial; </li>
+              <li>Aperfeiçoamentoconstante.</li>
+            </ul>
+          </CardBack>
+        </Card>
+      </CardContainer>
     </Container>
   );
 };

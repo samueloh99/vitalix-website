@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
               onClick={closeMobileMenu}
               to="#aboutTeam"
             >
-              NOSSA EQUIPE
+              A CLÍNICA
             </Link>
             <Link
               scroll={el =>
