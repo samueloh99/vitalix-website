@@ -6,9 +6,11 @@ import React, { useState } from 'react';
 
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
-import { Container, SliderContainer } from './style';
+import { Container, SliderContainer, ContainerWrapper } from './style';
 
 import { ImageData } from './ImageData';
+
+import imgMap from '../../assets/map.png';
 
 const AboutOffice: React.FC = () => {
   const [current, setCurrent] = useState(0);
@@ -29,28 +31,37 @@ const AboutOffice: React.FC = () => {
   return (
     <Container className="slider">
       <h1>Conheça um pouco do nosso espaço</h1>
-      <SliderContainer>
-        <AiOutlineArrowLeft
-          size={50}
-          className="leftArrow"
-          onClick={prevSlide}
-        />
-        <AiOutlineArrowRight
-          size={50}
-          className="rightArrow"
-          onClick={nextSlide}
-        />
-        {ImageData.map((item, key) => {
-          return (
-            <div
-              key={key}
-              className={key === current ? 'slide active' : 'slide'}
-            >
-              {key === current && <img src={item.img} alt="img" />}
-            </div>
-          );
-        })}
-      </SliderContainer>
+      <ContainerWrapper>
+        <SliderContainer>
+          <AiOutlineArrowLeft
+            size={50}
+            className="leftArrow"
+            onClick={prevSlide}
+          />
+          <AiOutlineArrowRight
+            size={50}
+            className="rightArrow"
+            onClick={nextSlide}
+          />
+          {ImageData.map((item, key) => {
+            return (
+              <div
+                key={key}
+                className={key === current ? 'slide active' : 'slide'}
+              >
+                {key === current && <img src={item.img} alt="img" />}
+              </div>
+            );
+          })}
+        </SliderContainer>
+        <a
+          href="https://www.google.com/maps/place/Vitalix+Odontologia/@-23.5954395,-46.6372414,15.69z/data=!4m5!3m4!1s0x0:0x1bc339a32884893d!8m2!3d-23.5954834!4d-46.6362184?hl=pt-BR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={imgMap} alt="map" />
+        </a>
+      </ContainerWrapper>
     </Container>
   );
 };

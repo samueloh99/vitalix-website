@@ -10,9 +10,23 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
+  padding: 0px 160px 0px 160px;
 
   h1 {
     color: ${colors.blueDark};
+  }
+`;
+
+export const ContainerWrapper = styled.div`
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: space-around;
+
+  img {
+    border-radius: 10px;
+    cursor: pointer;
   }
 `;
 
