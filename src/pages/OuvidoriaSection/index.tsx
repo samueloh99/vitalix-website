@@ -3,9 +3,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/button-has-type */
-import React, { useState } from 'react';
-
-// import { VscFeedback } from 'react-icons/vsc';
+import React from 'react';
 
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 
@@ -13,13 +11,7 @@ import { Container } from './style';
 
 import map from '../../assets/map.png';
 
-// import { ModalOuvidoria } from '../../components/ModalOuvidoria';
-
 const OuvidoriaSection: React.FC = () => {
-  const [isModalOpen, setModalState] = useState(false);
-
-  const toogleModal = () => setModalState(!isModalOpen);
-
   return (
     <Container>
       <div>
@@ -64,14 +56,6 @@ const OuvidoriaSection: React.FC = () => {
       >
         <img src={map} alt="map" />
       </a>
-      {/* <Container id="appointmentSection">
-        <h1>Queremos ouvir um FEEDBACK seu</h1>
-        <div onClick={toogleModal} className="buttonCustomized">
-          OUVIDORIA <div />
-          <VscFeedback />
-        </div>
-      </Container>
-      <ModalOuvidoria isOpen={isModalOpen} onClose={toogleModal} /> */}
     </Container>
   );
 };

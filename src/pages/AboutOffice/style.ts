@@ -17,6 +17,13 @@ export const Container = styled.div`
     color: ${colors.grey};
     font-size: 30px;
   }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+    height: 100vh;
+    margin: 0px 0px 70px 0px;
+  }
 `;
 
 export const ContainerWrapper = styled.div`
@@ -30,6 +37,11 @@ export const ContainerWrapper = styled.div`
   h4 {
     width: 400px;
     color: ${colors.black};
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin: 0;
   }
 `;
 
@@ -71,5 +83,15 @@ export const SliderContainer = styled.div`
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 70px 0px 70px 0px;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
   }
 `;
