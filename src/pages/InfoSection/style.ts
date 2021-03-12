@@ -9,12 +9,23 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   padding: 0px 160px 0px 160px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const CardContainer = styled.div`
   width: 250px;
   height: 300px;
   position: relative;
+
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Card = styled.div`

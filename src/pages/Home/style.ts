@@ -93,17 +93,23 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 630px) {
+    .linhaAzulHome {
+      display: none;
+    }
+
     .slide {
-      display: inline-block;
-      text-align: center;
+      display: inline-flex;
+      text-align: start;
+      align-items: center;
 
       h1 {
         font-size: 30px;
-        margin: 80px 15px 0px 15px;
+        margin: 0px 0px 50px 0px;
       }
       h4 {
         font-size: 17px;
-        margin: 0px 50px 5px 50px;
+        margin: 0px 0px 10px 0px;
+        width: 300px;
       }
       a {
         margin: 40px;

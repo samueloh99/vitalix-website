@@ -56,6 +56,7 @@ const Home: React.FC = () => {
             />
             <h1>{item.title}</h1>
             <div
+              className="linhaAzulHome"
               style={{
                 width: '165px',
                 height: '3px',
