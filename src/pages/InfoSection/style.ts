@@ -86,6 +86,8 @@ export const CardBack = styled.div`
 
   @media screen and (max-width: 1300px) {
     padding: 10px;
+    justify-content: center;
+
     h4 {
       font-size: 14px;
     }
