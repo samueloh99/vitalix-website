@@ -9,7 +9,8 @@ export const Container = styled.div`
   font-weight: lighter;
 
   h1 {
-    color: ${colors.blueDark};
+    font-size: 30px;
+    color: ${colors.grey};
   }
 
   @media screen and (max-width: 1300px) {

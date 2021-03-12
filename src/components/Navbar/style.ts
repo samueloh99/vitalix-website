@@ -57,6 +57,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
   margin-left: auto;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 
   .buttonCustomized {
     color: ${colors.white};

@@ -120,7 +120,7 @@ const Navbar: React.FC = () => {
               <div />
               <AiOutlineCalendar />
             </a>
-            <LineSeparator />
+            {/* <LineSeparator />
             <a
               className="instaIcon"
               href="https://www.instagram.com/odontovitalix"
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
                 onMouseLeave={() => setOverSecondImg(false)}
                 color={overSecondImg ? colors.blueshock : colors.black}
               />
-            </a>
+            </a> */}
           </HeaderOptions>
         </HeaderContent>
       </Header>

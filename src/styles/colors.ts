@@ -1,7 +1,7 @@
 export const blueshock = '#00c9ff';
 export const black = '#000000';
 export const white = '#ffff';
-export const grey = '#b4b4b6';
+export const grey = '#8a8a8a';
 export const blueDark = '#a2b5cd';
 
 export const h1 = '50px';

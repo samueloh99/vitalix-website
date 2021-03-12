@@ -75,6 +75,7 @@ const ServiceSection: React.FC = () => {
                   style={{
                     marginBottom: open === index ? '0px' : '10px',
                     borderRadius: open === index ? '5px 5px 0px 0px' : '5px',
+                    fontWeight: 'bold',
                   }}
                 >
                   {serviceData.title}
@@ -93,6 +94,7 @@ const ServiceSection: React.FC = () => {
                         <div
                           key={indexData}
                           onClick={() => clickSubtitle(subtitle)}
+                          style={{ fontWeight: 'bold' }}
                         >
                           {subtitle}
                         </div>
@@ -104,6 +106,7 @@ const ServiceSection: React.FC = () => {
               <div
                 onClick={() => toggleClick(index, serviceData.title)}
                 key={index}
+                style={{ fontWeight: 'bold' }}
               >
                 {serviceData.title}
               </div>

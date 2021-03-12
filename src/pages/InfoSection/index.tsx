@@ -2,13 +2,22 @@ import React from 'react';
 
 import { Container, CardContainer, Card, CardFront, CardBack } from './style';
 
+import card1 from '../../assets/card1.jpg';
+import card2 from '../../assets/card2.jpg';
+import card3 from '../../assets/card3.jpg';
+
 const InfoSection: React.FC = () => {
   return (
     <Container>
       <CardContainer>
         <Card className="card">
-          <CardFront>
-            <h1>MISSÃO</h1>
+          <CardFront
+            style={{
+              background: '#87868a',
+              backgroundImage: `url(${card1})`,
+            }}
+          >
+            <h1>NOSSA MISSÃO</h1>
           </CardFront>
           <CardBack>
             <h4>
@@ -21,8 +30,10 @@ const InfoSection: React.FC = () => {
       </CardContainer>
       <CardContainer>
         <Card className="card">
-          <CardFront>
-            <h1>VISÃO</h1>
+          <CardFront
+            style={{ background: '#3c3b3c', backgroundImage: `url(${card2})` }}
+          >
+            <h1>NOSSA VISÃO</h1>
           </CardFront>
           <CardBack>
             <h4>
@@ -36,8 +47,10 @@ const InfoSection: React.FC = () => {
       </CardContainer>
       <CardContainer>
         <Card className="card">
-          <CardFront>
-            <h1>VALOR</h1>
+          <CardFront
+            style={{ background: '#dfdfdf', backgroundImage: `url(${card3})` }}
+          >
+            <h1>NOSSA VALOR</h1>
           </CardFront>
           <CardBack>
             <ul>

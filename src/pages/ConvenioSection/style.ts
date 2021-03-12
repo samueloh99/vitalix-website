@@ -11,7 +11,8 @@ export const Container = styled.div`
   margin-bottom: 50px;
 
   h1 {
-    color: ${colors.blueDark};
+    color: ${colors.grey};
+    font-size: 30px;
   }
 
   div {

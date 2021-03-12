@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
@@ -9,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   padding: 0px 160px 0px 160px;
+  margin: 100px 0px 100px 0px;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
@@ -19,8 +21,8 @@ export const Container = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   position: relative;
 
   @media screen and (max-width: 1300px) {
@@ -34,7 +36,6 @@ export const Card = styled.div`
   height: 100%;
   transition: transform 1s ease-in-out;
   transform-style: preserve-3d;
-  border-radius: 10px;
 
   &:hover {
     transform: rotateY(180deg);
@@ -51,12 +52,9 @@ export const CardFront = styled.div`
   align-items: center;
   color: ${colors.black};
   background: ${colors.white};
-  border-radius: 10px;
 
   h1 {
-    text-shadow: 0 1px 0 #b5b5b5, -1px 2px 1px #bfbfbf, -2px 4px 1px #c7c7c7,
-      -4px 6px 1px #d4d4d4, -6px 8px 1px #e6e6e6;
-    color: #707070;
+    color: ${colors.white};
   }
 `;
 
@@ -66,18 +64,20 @@ export const CardBack = styled.div`
   display: flex;
   position: absolute;
   backface-visibility: hidden;
-  background: ${colors.blueDark};
+  background: #87868a;
   transform: rotateY(180deg);
   text-align: center;
   align-items: center;
   padding: 30px;
   font-size: 17px;
-  border-radius: 10px;
   color: ${colors.white};
+  justify-content: center;
 
   ul {
     display: inline-block;
-    text-align: start;
+    text-align: center;
+    list-style-type: none;
+
     li {
       margin-bottom: 10px;
     }

@@ -10,7 +10,8 @@ export const Container = styled.div`
   margin-bottom: 100px;
 
   h1 {
-    color: ${colors.blueDark};
+    color: ${colors.grey};
+    font-size: 30px;
   }
 
   .carouselContainer {

@@ -2,61 +2,127 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
+  height: 80vh;
   display: flex;
-  height: 200px;
-  background: ${colors.blueshock};
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 0px 160px 0px 160px;
+  margin-bottom: 100px;
 
-  h1 {
-    font-weight: lighter;
-    display: flex;
-    flex-direction: row;
+  form {
+    justify-content: start;
+    width: 300px;
 
-    p {
-      font-weight: bold;
-      margin-left: 10px;
+    label {
+      color: ${colors.black};
     }
-  }
 
-  .buttonCustomized {
-    color: ${colors.white};
-    margin-left: 80px;
-    background: transparent;
-    padding: 0px 10px 0px 10px;
-    border: 2px solid ${colors.white};
-    display: flex;
-    align-items: center;
+    input {
+      margin-bottom: 30px;
+      width: 250px;
+      padding: 5px;
+    }
 
-    div {
-      width: 2px;
+    textarea {
+      margin-bottom: 30px;
+    }
+
+    #subject {
+      width: 400px;
+      height: 150px;
+    }
+
+    .buttonSend {
+      border: none;
+      background: ${colors.blueshock};
+      width: 200px;
       height: 40px;
-      margin: 0px 10px 0px 10px;
-      background-color: ${colors.white};
-    }
+      color: ${colors.white};
+      cursor: pointer;
+      text-align: center;
+      transition: 0.5s ease-out;
 
-    &:hover {
-      border: 2px solid ${colors.blueDark};
-      background-color: ${colors.blueDark};
-      transition: 0.3s;
-      div {
-        background-color: ${colors.blueDark};
-        transition: 0.3s;
+      &:hover {
+        background: ${colors.blueDark};
       }
     }
+
+    display: flex;
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 1300px) {
-    flex-direction: column;
-    text-align: center;
-
-    h1 {
-      flex-direction: column;
-      font-size: 25px;
+  div {
+    h4 {
+      color: ${colors.black};
+      margin-bottom: 10px;
     }
-
-    .buttonCustomized {
-      margin: 30px 0px 0px 0px;
+    svg {
+      margin: 10px 10px 0px 0px;
     }
+  }
+
+  img {
+    border-radius: 10px;
+    cursor: pointer;
   }
 `;
+
+// export const Container = styled.div`
+//   display: flex;
+//   height: 200px;
+//   background: ${colors.blueshock};
+//   justify-content: center;
+//   align-items: center;
+
+//   h1 {
+//     font-weight: lighter;
+//     display: flex;
+//     flex-direction: row;
+
+//     p {
+//       font-weight: bold;
+//       margin-left: 10px;
+//     }
+//   }
+
+//   .buttonCustomized {
+//     color: ${colors.white};
+//     margin-left: 80px;
+//     background: transparent;
+//     padding: 0px 10px 0px 10px;
+//     border: 2px solid ${colors.white};
+//     display: flex;
+//     align-items: center;
+
+//     div {
+//       width: 2px;
+//       height: 40px;
+//       margin: 0px 10px 0px 10px;
+//       background-color: ${colors.white};
+//     }
+
+//     &:hover {
+//       border: 2px solid ${colors.blueDark};
+//       background-color: ${colors.blueDark};
+//       transition: 0.3s;
+//       div {
+//         background-color: ${colors.blueDark};
+//         transition: 0.3s;
+//       }
+//     }
+//   }
+
+//   @media screen and (max-width: 1300px) {
+//     flex-direction: column;
+//     text-align: center;
+
+//     h1 {
+//       flex-direction: column;
+//       font-size: 25px;
+//     }
+
+//     .buttonCustomized {
+//       margin: 30px 0px 0px 0px;
+//     }
+//   }
+// `;

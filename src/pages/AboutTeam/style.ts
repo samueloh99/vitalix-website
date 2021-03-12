@@ -19,6 +19,7 @@ export const AboutUsSection = styled.div`
   margin-top: 100px;
 
   h1 {
+    font-size: 30px;
     color: ${colors.blueDark};
   }
 

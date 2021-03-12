@@ -14,7 +14,8 @@ export const Container = styled.div`
   padding: 0px 160px 0px 160px;
 
   h1 {
-    color: ${colors.blueDark};
+    color: ${colors.grey};
+    font-size: 30px;
   }
 `;
 
@@ -23,10 +24,12 @@ export const ContainerWrapper = styled.div`
   margin-top: 100px;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 
-  img {
-    border-radius: 10px;
-    cursor: pointer;
+  h4 {
+    width: 400px;
+    color: ${colors.black};
   }
 `;
 

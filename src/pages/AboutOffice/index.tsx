@@ -54,13 +54,13 @@ const AboutOffice: React.FC = () => {
             );
           })}
         </SliderContainer>
-        <a
-          href="https://www.google.com/maps/place/Vitalix+Odontologia/@-23.5954395,-46.6372414,15.69z/data=!4m5!3m4!1s0x0:0x1bc339a32884893d!8m2!3d-23.5954834!4d-46.6362184?hl=pt-BR"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={imgMap} alt="map" />
-        </a>
+        <h4>
+          A Clínica Vitalix Odontologia está localizada no prédio da EZ TEC,
+          situada na região da Vila Mariana e próxima ao metrô e Shopping Santa
+          Cruz. O prédio dispõe de um estacionamento privado com seguranças, um
+          restaurante agradável (Dr. Bowls), um belo espaço externo aberto para
+          descanso e um hall de entrada com um ambiente sofisticado.
+        </h4>
       </ContainerWrapper>
     </Container>
   );
