@@ -24,8 +24,6 @@ import {
 
 import { ServiceData, subtitleDatas, titleDatas } from './Data';
 
-import clareamentoDental from '../../assets/clareamentoDental.jpg';
-
 import * as colors from '../../styles/colors';
 
 const ServiceSection: React.FC = () => {
@@ -154,7 +152,6 @@ const ServiceSection: React.FC = () => {
                         <AiOutlineCalendar />
                       </button>
                     </ContentInfoDescription>
-                    {/* <img src={clareamentoDental} alt="img" /> */}
                   </ContentInfo>
                 </div>
               ),
@@ -183,7 +180,6 @@ const ServiceSection: React.FC = () => {
                       <AiOutlineCalendar />
                     </button>
                   </ContentInfoDescription>
-                  {/* <img src={clareamentoDental} alt="img" /> */}
                 </ContentInfo>
               </div>
             ),

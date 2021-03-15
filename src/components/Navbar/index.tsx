@@ -2,13 +2,11 @@
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 
-import { FaBars, FaTimes, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import { AiOutlineCalendar } from 'react-icons/ai';
 
 import { HashLink as Link } from 'react-router-hash-link';
-
-import * as colors from '../../styles/colors';
 
 import {
   Container,
@@ -16,16 +14,12 @@ import {
   HeaderContent,
   HeaderOptions,
   MobileIcon,
-  LineSeparator,
 } from './style';
 
 import logoImg from '../../assets/logo.png';
 
 const Navbar: React.FC = () => {
   const [click, setClick] = useState(false);
-
-  const [overFirstImg, setOverFirstImg] = useState(false);
-  const [overSecondImg, setOverSecondImg] = useState(false);
 
   const handleClick = () => setClick(!click);
 
@@ -120,33 +114,6 @@ const Navbar: React.FC = () => {
               <div />
               <AiOutlineCalendar />
             </a>
-            {/* <LineSeparator />
-            <a
-              className="instaIcon"
-              href="https://www.instagram.com/odontovitalix"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram
-                size={20}
-                onMouseOver={() => setOverFirstImg(true)}
-                onMouseLeave={() => setOverFirstImg(false)}
-                color={overFirstImg ? colors.blueshock : colors.black}
-              />
-            </a>
-            <a
-              className="facebookIcon"
-              href="https://www.facebook.com/odontovitalix"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF
-                size={20}
-                onMouseOver={() => setOverSecondImg(true)}
-                onMouseLeave={() => setOverSecondImg(false)}
-                color={overSecondImg ? colors.blueshock : colors.black}
-              />
-            </a> */}
           </HeaderOptions>
         </HeaderContent>
       </Header>

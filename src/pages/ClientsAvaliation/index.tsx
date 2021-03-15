@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable react/no-array-index-key */
-import React, { Component } from 'react';
+import React from 'react';
 
 import Slider from 'react-slick';
 
@@ -15,8 +15,8 @@ const ClientsAvaliation: React.FC = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,

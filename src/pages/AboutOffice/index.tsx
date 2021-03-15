@@ -10,8 +10,6 @@ import { Container, SliderContainer, ContainerWrapper } from './style';
 
 import { ImageData } from './ImageData';
 
-import imgMap from '../../assets/map.png';
-
 const AboutOffice: React.FC = () => {
   const [current, setCurrent] = useState(0);
   const { length } = ImageData;

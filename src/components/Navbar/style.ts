@@ -172,14 +172,3 @@ export const HeaderOptions = styled.div<NavBarProps>`
     }
   }
 `;
-
-export const LineSeparator = styled.div`
-  border: 1px solid ${colors.black};
-  width: 1px;
-  height: 54px;
-  margin: 0px 38px 0px 38px;
-
-  @media screen and (max-width: 1300px) {
-    display: none;
-  }
-`;
