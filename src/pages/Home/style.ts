@@ -61,7 +61,7 @@ export const Container = styled.div`
     border: 2px solid ${colors.blueshock};
     display: flex;
     align-items: center;
-    width: 255px;
+    width: 270px;
     margin: 100px 0px 0px 100px;
     padding: 0px 0px 0px 10px;
 

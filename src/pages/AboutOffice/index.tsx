@@ -34,12 +34,12 @@ const AboutOffice: React.FC = () => {
       <ContainerWrapper>
         <SliderContainer>
           <AiOutlineArrowLeft
-            size={50}
+            size={30}
             className="leftArrow"
             onClick={prevSlide}
           />
           <AiOutlineArrowRight
-            size={50}
+            size={30}
             className="rightArrow"
             onClick={nextSlide}
           />

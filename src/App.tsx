@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 /* eslint-disable import/extensions */
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -9,7 +9,6 @@ import GlobalStyle from './styles/global';
 
 import Home from './pages/Home';
 import InfoSection from './pages/InfoSection';
-// import AboutTeam from './pages/AboutTeam';
 import ServiceSection from './pages/ServiceSection';
 import AboutOffice from './pages/AboutOffice';
 import ClientsAvaliation from './pages/ClientsAvaliation';
@@ -19,19 +18,12 @@ import OuvidoriaSection from './pages/OuvidoriaSection';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  }, [window.onbeforeunload]);
-
   return (
     <Router>
       <Navbar />
       <Home />
       <InfoSection />
       <AboutOffice />
-      {/* <AboutTeam /> */}
       <ServiceSection />
       <ClientsAvaliation />
       <AppointmentSection />

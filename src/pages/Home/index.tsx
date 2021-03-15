@@ -75,7 +75,7 @@ const Home: React.FC = () => {
               rel="noopener noreferrer"
               style={{ textDecoration: 'none' }}
             >
-              AGENDAMENTO ONLINE
+              AGENDE A SUA CONSULTA
               <div />
               <AiOutlineCalendar />
             </a>

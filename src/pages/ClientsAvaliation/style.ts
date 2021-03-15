@@ -3,68 +3,44 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
   padding: 0px 160px 0px 160px;
-  margin-top: 250px;
-  margin-bottom: 100px;
+  margin: 200px 0px 100px 0px;
+  width: 100%;
 
-  h1 {
+  > h1 {
     color: ${colors.grey};
     font-size: 30px;
+    margin-bottom: 100px;
   }
 
-  .carouselContainer {
-    margin-top: 100px;
-
-    button.rec-dot {
-      background-color: black;
-    }
-
-    .eHuHp {
-      box-shadow: 0 0 1px 3px rgba(162, 181, 205, 10);
-    }
-
-    button.rec-dot:hover,
-    button.rec-dot:active,
-    button.rec-dot:focus {
-      box-shadow: 0 0 1px 3px ${colors.blueshock};
-    }
-
-    .gQJlrl {
-      background: transparent;
-    }
-
-    .cFfBuL {
-      background: transparent;
-    }
+  .slick-slide {
+    padding: 20px;
   }
 
   @media screen and (max-width: 1300px) {
     padding: 0px 10px 0px 10px;
-  }
 
-  @media screen and (max-width: 500px) {
-    .linhaAzul {
-      display: none;
+    .slick-slide {
+      margin-bottom: 20px;
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
     }
   }
 `;
 
 export const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  height: 250px;
-  width: 100%;
-  background-color: transparent;
-  color: ${colors.black};
-  margin: 0 15px;
-  font-size: 4em;
-  padding: 30px;
-
-  h4 {
+  h1 {
     font-size: 20px;
+    color: ${colors.black};
+  }
+  h4 {
+    color: ${colors.black};
+    font-size: 12px;
+    margin-top: 10px;
   }
 `;

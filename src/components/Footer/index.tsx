@@ -4,8 +4,6 @@ import { Container, FooterInfo, FooterInfoSection, FooterEnd } from './style';
 
 import logo from '../../assets/logo.png';
 
-import * as colors from '../../styles/colors';
-
 const Footer: React.FC = () => {
   return (
     <Container>
