@@ -2,18 +2,31 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
-  height: 80vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
   padding: 0px 160px 0px 160px;
   margin-bottom: 100px;
+  height: 100%;
 
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+    align-items: start;
+  }
+`;
+
+export const Header = styled.div`
   h1 {
     font-size: 30px;
     color: ${colors.grey};
     margin-bottom: 30px;
   }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   form {
     justify-content: start;
@@ -35,8 +48,8 @@ export const Container = styled.div`
     }
 
     #subject {
-      width: 400px;
-      height: 150px;
+      width: 300px;
+      height: 200px;
     }
 
     .buttonSend {
@@ -53,42 +66,53 @@ export const Container = styled.div`
         background: ${colors.blueDark};
       }
     }
-
-    display: flex;
-    flex-direction: column;
   }
 
-  div {
-    h4 {
-      color: ${colors.black};
-      margin-bottom: 10px;
-    }
-    svg {
-      margin: 10px 10px 0px 0px;
-    }
-  }
-
-  img {
+  .mapDesktop {
     border-radius: 10px;
     cursor: pointer;
   }
 
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    padding: 0px 10px 0px 10px;
-    height: 130vh;
-    align-items: start;
+  .mapMobile {
+    display: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
-    img {
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+
+    .mapDesktop {
+      display: none;
+    }
+
+    .mapMobile {
+      display: flex;
+      border-radius: 10px;
+      cursor: pointer;
       width: 300px;
       height: 300px;
-      margin: 60px 0px 0px 0px;
     }
+  }
+`;
 
-    form {
-      #subject {
-        width: 100%;
-      }
+export const MidiaInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+
+    svg {
+      margin: 10px 10px 10px 0px;
     }
+  }
+
+  h4 {
+    color: ${colors.black};
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 20px;
   }
 `;

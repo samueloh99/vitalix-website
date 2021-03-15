@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding: 0px 160px 0px 160px;
   margin: 100px 0px 100px 0px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     flex-direction: column;
     height: 100vh;
     margin: 100px 0px 0px 0px;
@@ -55,6 +55,12 @@ export const CardFront = styled.div`
 
   h1 {
     color: ${colors.white};
+  }
+
+  @media screen and (max-width: 1300px) {
+    h1 {
+      font-size: 20px;
+    }
   }
 `;
 

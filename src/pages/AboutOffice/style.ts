@@ -85,7 +85,7 @@ export const SliderContainer = styled.div`
     transform: scale(1.08);
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     width: 100%;
     margin: 70px 0px 70px 0px;
 
