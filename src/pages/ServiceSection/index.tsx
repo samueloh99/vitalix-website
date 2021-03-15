@@ -82,6 +82,7 @@ const ServiceSection: React.FC = () => {
                 <div
                   style={{
                     display: open === index ? 'flex' : 'none',
+                    opacity: open === index ? '1' : '0',
                     borderRadius: open === index ? '0px 0px 5px 5px' : '5px',
                   }}
                   className="info"

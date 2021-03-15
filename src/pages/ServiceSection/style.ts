@@ -31,10 +31,8 @@ export const Services = styled.div`
 export const ServiceOptions = styled.div`
   display: flex;
   flex-direction: column;
-  animation: ease-in-out 1s;
 
   div {
-    animation: ease-in-out 1s;
     display: flex;
     border-radius: 5px;
     background: ${colors.blueDark};
@@ -46,7 +44,6 @@ export const ServiceOptions = styled.div`
   }
 
   .info {
-    animation: ease-in-out 1s;
     flex-direction: column;
 
     div {
