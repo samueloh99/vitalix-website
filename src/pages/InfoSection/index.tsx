@@ -8,7 +8,7 @@ import card3 from '../../assets/card3.jpg';
 
 const InfoSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="infoSection">
       <CardContainer>
         <Card className="card">
           <CardFront

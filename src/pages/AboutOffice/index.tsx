@@ -27,7 +27,7 @@ const AboutOffice: React.FC = () => {
   }
 
   return (
-    <Container className="slider">
+    <Container id="aboutOffice" className="slider">
       <h1>Conheça um pouco do nosso espaço</h1>
       <ContainerWrapper>
         <SliderContainer>

@@ -48,6 +48,7 @@ const ClientsAvaliation: React.FC = () => {
         {ClientsData.map((item, index) => {
           return (
             <Card key={index}>
+              <p style={{ marginBottom: '30px' }}>❤️</p>
               <h1>{item.name}</h1>
               <h4>{item.comment}</h4>
             </Card>

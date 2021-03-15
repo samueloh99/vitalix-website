@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
                 })
               }
               onClick={closeMobileMenu}
-              to="#aboutTeam"
+              to="#aboutOffice"
             >
               A CLÍNICA
             </Link>
