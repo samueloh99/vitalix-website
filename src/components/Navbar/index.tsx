@@ -104,6 +104,19 @@ const Navbar: React.FC = () => {
             >
               CONVÊNIO
             </Link>
+            <Link
+              scroll={el =>
+                window.scrollTo({
+                  top:
+                    el.getBoundingClientRect().top + window.pageYOffset + -200,
+                  behavior: 'smooth',
+                })
+              }
+              onClick={closeMobileMenu}
+              to="#localization"
+            >
+              LOCALIZAÇÃO
+            </Link>
             <a
               className="buttonCustomized"
               href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."

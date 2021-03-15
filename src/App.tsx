@@ -14,6 +14,7 @@ import AboutOffice from './pages/AboutOffice';
 import ClientsAvaliation from './pages/ClientsAvaliation';
 import AppointmentSection from './pages/AppointmentSection';
 import ConvenioSection from './pages/ConvenioSection';
+import LocalizationSection from './pages/LocalizationSection';
 import OuvidoriaSection from './pages/OuvidoriaSection';
 import Footer from './components/Footer';
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <ClientsAvaliation />
       <AppointmentSection />
       <ConvenioSection />
+      <LocalizationSection />
       <OuvidoriaSection />
       <Footer />
       <GlobalStyle />

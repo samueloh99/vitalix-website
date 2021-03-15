@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { Container, FooterInfo, FooterInfoSection, FooterEnd } from './style';
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+
+import {
+  Container,
+  FooterInfo,
+  FooterInfoSection,
+  FooterEnd,
+  FooterMidle,
+} from './style';
 
 import logo from '../../assets/logo.png';
 
@@ -9,12 +17,9 @@ const Footer: React.FC = () => {
     <Container>
       <FooterInfo>
         <FooterInfoSection>
-          <h4>
-            R. Domingos de Morais, 2187 - Bloco Paris, Conjunto 411 - Vila
-            Mariana
-          </h4>
-          <h4>Tel. Fixo: (11)5083-8884</h4>
-          <h4>WhatsApp: (11)94205-9930</h4>
+          <h4>Contato: E-mail: odontovitalix@gmail.com</h4>
+          <h4>Tel. Fixo: (11) 5083-8884</h4>
+          <h4>WhatsApp: (11) 94205-9930</h4>
           <h4 style={{ marginTop: '30px', fontWeight: 'bolder' }}>
             Responsável Técnico:
           </h4>
@@ -23,7 +28,7 @@ const Footer: React.FC = () => {
           <h4>CRO Clínica 021827</h4>
           <h4
             style={{
-              marginBottom: '0px',
+              marginBottom: '8px',
               marginTop: '22px',
               fontWeight: 'bolder',
             }}
@@ -32,8 +37,30 @@ const Footer: React.FC = () => {
           </h4>
           <h4>Segunda - Sexta: 09:00 AM - 18:00 PM</h4>
         </FooterInfoSection>
+        <FooterMidle>
+          <h4>Siga-nos nas Redes Sociais</h4>
+          <div>
+            <a
+              className="instaIcon"
+              href="https://www.instagram.com/odontovitalix"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size={25} color="#D84261" />
+            </a>
+            <a
+              className="facebookIcon"
+              href="https://www.facebook.com/odontovitalix"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF size={25} color="#2A74E8" />
+            </a>
+          </div>
+        </FooterMidle>
         <img src={logo} alt="logo" />
       </FooterInfo>
+
       <FooterEnd>
         <h4>Todos os direitos reservados para Vitalix Odontologia</h4>
         <h4>

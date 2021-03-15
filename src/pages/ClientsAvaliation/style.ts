@@ -40,7 +40,7 @@ export const Card = styled.div`
   }
   h4 {
     color: ${colors.black};
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 10px;
   }
 `;

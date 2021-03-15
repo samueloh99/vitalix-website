@@ -120,31 +120,85 @@ const ServiceSection: React.FC = () => {
                   <ContentInfo>
                     <ContentInfoDescription>
                       <h4 style={{ fontSize: '20px' }}>{item.id}</h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc1}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc2}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc3}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc4}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc5}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc6}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc7}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc8}
                       </h4>
-                      <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                      <h4
+                        style={{
+                          fontWeight: 'lighter',
+                          marginTop: '20px',
+                          fontSize: '17px',
+                        }}
+                      >
                         {item.desc9}
                       </h4>
                       <button>
@@ -166,13 +220,31 @@ const ServiceSection: React.FC = () => {
                 <ContentInfo>
                   <ContentInfoDescription>
                     <h4 style={{ fontSize: '20px' }}>{item.title}</h4>
-                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                    <h4
+                      style={{
+                        fontWeight: 'lighter',
+                        marginTop: '20px',
+                        fontSize: '17px',
+                      }}
+                    >
                       {item.desc1}
                     </h4>
-                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                    <h4
+                      style={{
+                        fontWeight: 'lighter',
+                        marginTop: '20px',
+                        fontSize: '17px',
+                      }}
+                    >
                       {item.desc2}
                     </h4>
-                    <h4 style={{ fontWeight: 'lighter', marginTop: '20px' }}>
+                    <h4
+                      style={{
+                        fontWeight: 'lighter',
+                        marginTop: '20px',
+                        fontSize: '17px',
+                      }}
+                    >
                       {item.desc3}
                     </h4>
 

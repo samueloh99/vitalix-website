@@ -124,7 +124,7 @@ export const subtitleDatas = [
     desc4: '- Clareamento em consultório',
     desc5: '- Clareamento Misto',
     desc6:
-      'A técnica correta deve ser indicada individualmente pelo profissional após uma consulta pois vai pode variar acordo com a necessidade de cada paciente. ',
+      'A técnica correta deve ser indicada individualmente pelo profissional após uma consulta pois pode variar de acordo com a necessidade de cada paciente. ',
   },
   {
     id: 'Faceta Direta em Resina Composta',

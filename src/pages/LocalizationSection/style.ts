@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0px 160px 0px 160px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  margin-top: 100px;
   height: 100%;
 
   @media screen and (max-width: 1300px) {
@@ -16,10 +18,10 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
+  margin-bottom: 70px;
   h1 {
     font-size: 30px;
     color: ${colors.grey};
-    margin-bottom: 30px;
   }
 `;
 
@@ -28,56 +30,23 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 300px;
+  div {
+    width: 500px;
+    margin: 0px 10px 0px 30px;
 
-    label {
-      color: ${colors.black};
-      margin: 0px 0px 10px 0px;
-    }
-
-    input {
+    h4 {
+      font-size: 17px;
+      color: ${colors.grey};
       margin-bottom: 30px;
-      width: 250px;
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid black;
-    }
-
-    textarea {
-      margin-bottom: 30px;
-    }
-
-    #subject {
-      width: 300px;
-      height: 200px;
-    }
-
-    .buttonSend {
-      border: none;
-      background: ${colors.blueshock};
-      width: 200px;
-      height: 40px;
-      color: ${colors.white};
-      cursor: pointer;
-      text-align: center;
-      transition: 0.5s ease-out;
-
-      &:hover {
-        background: ${colors.blueDark};
-      }
     }
   }
 
-  .ouvidoriaDesktop {
+  .mapDesktop {
     border-radius: 10px;
     cursor: pointer;
   }
 
-  .ouvidoriaMobile {
+  .mapMobile {
     display: none;
     border-radius: 10px;
     cursor: pointer;
@@ -87,11 +56,18 @@ export const Content = styled.div`
     flex-direction: column;
     width: 100%;
 
-    .ouvidoriaDesktop {
+    div {
+      width: 350px;
+      margin-top: 40px;
+      text-align: center;
+      margin: 30px 0px 0px 0px;
+    }
+
+    .mapDesktop {
       display: none;
     }
 
-    .ouvidoriaMobile {
+    .mapMobile {
       display: flex;
       border-radius: 10px;
       cursor: pointer;

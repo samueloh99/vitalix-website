@@ -13,6 +13,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1300px) {
     padding: 0px 10px 0px 10px;
+    height: 600px;
   }
 `;
 
@@ -21,7 +22,6 @@ export const FooterInfo = styled.div`
   flex: row;
   margin-top: 30px;
   justify-content: space-between;
-  align-items: center;
 
   img {
     height: 150px;
@@ -30,8 +30,11 @@ export const FooterInfo = styled.div`
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     img {
       height: 100px;
+      width: 100px;
     }
   }
 `;
@@ -50,6 +53,34 @@ export const FooterInfoSection = styled.div`
 
   @media screen and (max-width: 1300px) {
     margin-bottom: 10px;
+    h4 {
+      font-size: 12px;
+    }
+  }
+`;
+
+export const FooterMidle = styled.div`
+  display: flex;
+  flex-direction: column;
+  left: 0;
+
+  svg {
+    margin-right: 10px;
+  }
+  h4 {
+    margin-bottom: 10px;
+    color: ${colors.white};
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin: 20px 0px 50px 0px;
     h4 {
       font-size: 12px;
     }
