@@ -1,14 +1,14 @@
-import banner1 from '../../assets/Banner Clareamento.jpg';
-import banner2 from '../../assets/Banner Harmonizacao Facial.jpg';
-import banner3 from '../../assets/Banner Implantes Dentarios.jpg';
-import banner4 from '../../assets/Banner Lentes de Contato.jpg';
-import banner5 from '../../assets/Banner Ortodontia.jpg';
+import banner1 from '../../assets/homeImg/Banner Clareamento.jpg';
+import banner2 from '../../assets/homeImg/Banner Harmonizacao Facial.jpg';
+import banner3 from '../../assets/homeImg/Banner Implantes Dentarios.jpg';
+import banner4 from '../../assets/homeImg/Banner Lentes de Contato.jpg';
+import banner5 from '../../assets/homeImg/Banner Ortodontia.jpg';
 
-import banner1Mobile from '../../assets/Banner-Clareamento(mobile).jpg';
-import banner2Mobile from '../../assets/Banner-Harmonizacao(mobile).jpg';
-import banner3Mobile from '../../assets/Banner-Implante(mobile).jpg';
-import banner4Mobile from '../../assets/Banner-Lente-de-Contato(mobile).jpg';
-import banner5Mobile from '../../assets/Banner-Ortodontia(mobile).jpg';
+import banner1Mobile from '../../assets/homeImg/Banner-Clareamento(mobile).jpg';
+import banner2Mobile from '../../assets/homeImg/Banner-Harmonizacao(mobile).jpg';
+import banner3Mobile from '../../assets/homeImg/Banner-Implante(mobile).jpg';
+import banner4Mobile from '../../assets/homeImg/Banner-Lente-de-Contato(mobile).jpg';
+import banner5Mobile from '../../assets/homeImg/Banner-Ortodontia(mobile).jpg';
 
 export const SliderData = [
   {

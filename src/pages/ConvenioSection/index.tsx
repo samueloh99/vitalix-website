@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Container } from './style';
 
-import amil from '../../assets/amil.png';
-import ideal from '../../assets/ideal.png';
-import inter from '../../assets/interodonto.png';
-import porto from '../../assets/porto-seguro.png';
-import sulamerica from '../../assets/sulamerica.png';
-import unimed from '../../assets/unimed.png';
+import amil from '../../assets/convenioos/amil.png';
+import ideal from '../../assets/convenioos/ideal.png';
+import inter from '../../assets/convenioos/interodonto.png';
+import porto from '../../assets/convenioos/porto-seguro.png';
+import sulamerica from '../../assets/convenioos/sulamerica.png';
+import unimed from '../../assets/convenioos/unimed.png';
 
 const ConvenioSection: React.FC = () => {
   return (

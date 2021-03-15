@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Container, CardContainer, Card, CardFront, CardBack } from './style';
 
-import card1 from '../../assets/card1.jpg';
-import card2 from '../../assets/card2.jpg';
-import card3 from '../../assets/card3.jpg';
+import card1 from '../../assets/cardBg/card1.jpg';
+import card2 from '../../assets/cardBg/card2.jpg';
+import card3 from '../../assets/cardBg/card3.jpg';
 
 const InfoSection: React.FC = () => {
   return (

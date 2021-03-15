@@ -1,4 +1,4 @@
-import dentistica from '../../assets/dentistica.png';
+// import dentistica from '../../assets/dentistica.png';
 
 export const ServiceData = [
   {
@@ -110,7 +110,7 @@ export const titleDatas = [
     title: 'Dentística Restauradora',
     desc1:
       'A Dentística restauradora é o ramo da Odontologia que tem base na reconstrução e correção das imperfeições dos dentes quando os mesmos perdem alguma estrutura anatômica ou nascem com ausência dessas estruturas.',
-    img: dentistica,
+    // img: dentistica,
   },
 ];
 
@@ -228,13 +228,13 @@ export const subtitleDatas = [
     id: 'Restauração Dental',
     desc1:
       'É realizado a remoção de uma porção cariada do dente, limpando a área contaminada para serem preenchidas com um material restaurador, podendo ser de maneira estética ou funcional. O material mais utilizado é a resina composta, que consiste em uma “massinha” de coloração semelhante ao dente que é colocada em pequenas camadas sobre o dente.',
-    img: dentistica,
+    // img: dentistica,
   },
   {
     id: 'Reconstrução Dental',
     desc1:
       'É a arte de reconstruir e corrigir imperfeições dos dentes quando os mesmos perdem alguma estrutura anatômica, devolvendo a condição natural dos dentes. É indicada, principalmente, quando o dente é fraturado ou afetado pela cárie. Restaurações também podem ser feitas para preenchimentos de espaços e correções de forma e cor.',
-    img: dentistica,
+    // img: dentistica,
   },
   {
     id: 'Extração de Dente Simples',
