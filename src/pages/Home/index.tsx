@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {
   AiOutlineArrowLeft,
@@ -17,6 +17,13 @@ import * as colors from '../../styles/colors';
 
 const Home: React.FC = () => {
   const [x, setX] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      x === -100 * (SliderData.length - 1) ? setX(0) : setX(x - 100);
+    }, 5000);
+    return () => clearInterval(interval);
+  });
 
   const goLeft = () => {
     x === 0 ? setX(-100 * (SliderData.length - 1)) : setX(x + 100);
