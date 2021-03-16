@@ -1,65 +1,82 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React from 'react';
 
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import Slider from 'react-slick';
 
-import { Container, SliderContainer, ContainerWrapper } from './style';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+
+import { Container } from './style';
 
 import { ImageData } from './ImageData';
 
+import * as colors from '../../styles/colors';
+
 const AboutOffice: React.FC = () => {
-  const [current, setCurrent] = useState(0);
-  const { length } = ImageData;
+  const NextArrow = (props: { onClick: any }) => {
+    const { onClick } = props;
 
-  const nextSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    return (
+      <div className="nextArrow" onClick={onClick}>
+        <FaArrowRight size={30} color={colors.black} />
+      </div>
+    );
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const PrevArrow = (props: { onClick: any }) => {
+    const { onClick } = props;
+    return (
+      <div className="prevArrow" onClick={onClick}>
+        <FaArrowLeft size={30} color={colors.black} />
+      </div>
+    );
   };
 
-  if (!Array.isArray(ImageData) || ImageData.length <= 0) {
-    return null;
-  }
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    nextArrow: <NextArrow onClick />,
+    prevArrow: <PrevArrow onClick />,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+  };
 
   return (
     <Container id="aboutOffice" className="slider">
       <h1>Conheça um pouco do nosso espaço</h1>
-      <ContainerWrapper>
-        <SliderContainer>
-          <AiOutlineArrowLeft
-            size={30}
-            className="leftArrow"
-            onClick={prevSlide}
-          />
-          <AiOutlineArrowRight
-            size={30}
-            className="rightArrow"
-            onClick={nextSlide}
-          />
-          {ImageData.map((item, key) => {
-            return (
-              <div
-                key={key}
-                className={key === current ? 'slide active' : 'slide'}
-              >
-                {key === current && <img src={item.img} alt="img" />}
-              </div>
-            );
-          })}
-        </SliderContainer>
-        <h4>
-          A Clínica Vitalix Odontologia está localizada no prédio da EZ TEC,
-          situada na região da Vila Mariana e próxima ao metrô e Shopping Santa
-          Cruz. O prédio dispõe de um estacionamento privado com seguranças, um
-          restaurante agradável (Dr. Bowls), um belo espaço externo aberto para
-          descanso e um hall de entrada com um ambiente sofisticado.
-        </h4>
-      </ContainerWrapper>
+      <Slider {...settings}>
+        {ImageData.map(item => {
+          return (
+            <div key={item.id}>
+              <img src={item.img} alt="img" />
+            </div>
+          );
+        })}
+      </Slider>
     </Container>
   );
 };

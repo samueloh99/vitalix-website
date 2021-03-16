@@ -24,20 +24,27 @@ const LocalizationSection: React.FC = () => {
         </a>
         <div>
           <h4>
-            A Clínica Vitalix Odontologia está localizada no prédio da EZ TEC,
-            situada na região da Vila Mariana e{' '}
-            <strong style={{ fontWeight: 'bold' }}>
-              próxima ao metrô e Shopping Santa Cruz.
-            </strong>{' '}
-            O prédio dispõe de um estacionamento privado com seguranças, um
-            restaurante agradável (Dr. Bowls), um belo espaço externo aberto
-            para descanso e um hall de entrada com um ambiente sofisticado.
+            A Vitalix Odontologia está localizada a 2 minutos do metrô e
+            Shopping Santa Cruz. O prédio dispõe de um estacionamento privado
+            com seguranças, um restaurante agradável (Dr. Bowls), um belo espaço
+            externo aberto para descanso e um hall de entrada com um ambiente
+            sofisticado.
           </h4>
           <h4>
             R. Domingos de Morais, 2187 - Bloco Paris, Conjunto 411 - Vila
             Mariana
           </h4>
           <h4>CEP: 04035-000</h4>
+          <h4
+            style={{
+              marginBottom: '8px',
+              marginTop: '22px',
+              fontWeight: 'bolder',
+            }}
+          >
+            Horario de Funcionamento:
+          </h4>
+          <h4>Segunda - Sexta: 09:00 AM - 18:00 PM</h4>
         </div>
       </Content>
     </Container>

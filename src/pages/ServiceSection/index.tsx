@@ -207,7 +207,7 @@ const ServiceSection: React.FC = () => {
                         <AiOutlineCalendar />
                       </button>
                     </ContentInfoDescription>
-                    <img src={item.img} alt="imgDesc" />
+                    {/* <img src={item.img} alt="imgDesc" /> */}
                   </ContentInfo>
                 </div>
               ),
@@ -254,7 +254,7 @@ const ServiceSection: React.FC = () => {
                       <AiOutlineCalendar />
                     </button>
                   </ContentInfoDescription>
-                  <img src={item.img} alt="img" />
+                  {/* <img src={item.img} alt="img" /> */}
                 </ContentInfo>
               </div>
             ),
