@@ -105,6 +105,13 @@ export const ContentInfo = styled.div`
     }
   }
 
+  div {
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
   img {
     height: 200px;
     margin: 40px 0px 0px 30px;

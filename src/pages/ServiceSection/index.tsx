@@ -207,7 +207,14 @@ const ServiceSection: React.FC = () => {
                         <AiOutlineCalendar />
                       </button>
                     </ContentInfoDescription>
-                    {/* <img src={item.img} alt="imgDesc" /> */}
+                    <div>
+                      <img src={item.img} alt="imgDesc" />
+                      {item.img2 ? (
+                        <img src={item.img2} alt="imgDesc2" />
+                      ) : (
+                        <></>
+                      )}
+                    </div>
                   </ContentInfo>
                 </div>
               ),
@@ -254,7 +261,10 @@ const ServiceSection: React.FC = () => {
                       <AiOutlineCalendar />
                     </button>
                   </ContentInfoDescription>
-                  {/* <img src={item.img} alt="img" /> */}
+                  <div>
+                    <img src={item.img} alt="imgDesc" />
+                    {item.img2 ? <img src={item.img2} alt="imgDesc2" /> : <></>}
+                  </div>
                 </ContentInfo>
               </div>
             ),

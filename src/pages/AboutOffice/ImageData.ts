@@ -9,6 +9,13 @@ import imgCarousel8 from '../../assets/aboutOffice/img8.jpg';
 import imgCarousel9 from '../../assets/aboutOffice/img9.jpeg';
 import imgCarousel10 from '../../assets/aboutOffice/img10.jpeg';
 import imgCarousel11 from '../../assets/aboutOffice/img11.jpeg';
+import imgCarousel12 from '../../assets/aboutOffice/img12.jpeg';
+import imgCarousel13 from '../../assets/aboutOffice/img13.jpeg';
+import imgCarousel14 from '../../assets/aboutOffice/img14.jpeg';
+import imgCarousel15 from '../../assets/aboutOffice/img15.jpeg';
+import imgCarousel16 from '../../assets/aboutOffice/img16.jpeg';
+import imgCarousel17 from '../../assets/aboutOffice/img17.jpeg';
+import imgCarousel18 from '../../assets/aboutOffice/img18.jpeg';
 
 export const ImageData = [
   {
@@ -54,5 +61,33 @@ export const ImageData = [
   {
     id: 11,
     img: imgCarousel11,
+  },
+  {
+    id: 12,
+    img: imgCarousel12,
+  },
+  {
+    id: 13,
+    img: imgCarousel13,
+  },
+  {
+    id: 14,
+    img: imgCarousel14,
+  },
+  {
+    id: 15,
+    img: imgCarousel15,
+  },
+  {
+    id: 16,
+    img: imgCarousel16,
+  },
+  {
+    id: 17,
+    img: imgCarousel17,
+  },
+  {
+    id: 18,
+    img: imgCarousel18,
   },
 ];
