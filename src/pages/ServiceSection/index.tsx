@@ -208,7 +208,7 @@ const ServiceSection: React.FC = () => {
                       </button>
                     </ContentInfoDescription>
                     <div>
-                      <img src={item.img} alt="imgDesc" />
+                      {item.img ? <img src={item.img} alt="imgDesc" /> : <></>}
                       {item.img2 ? (
                         <img src={item.img2} alt="imgDesc2" />
                       ) : (
@@ -262,7 +262,7 @@ const ServiceSection: React.FC = () => {
                     </button>
                   </ContentInfoDescription>
                   <div>
-                    <img src={item.img} alt="imgDesc" />
+                    {item.img ? <img src={item.img} alt="imgDesc" /> : <></>}
                     {item.img2 ? <img src={item.img2} alt="imgDesc2" /> : <></>}
                   </div>
                 </ContentInfo>
