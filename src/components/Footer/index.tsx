@@ -38,6 +38,7 @@ const Footer: React.FC = () => {
           <h4>Segunda - Sexta: 09:00 AM - 18:00 PM</h4>
         </FooterInfoSection>
         <FooterMidle>
+          <img src={logo} alt="logo" />
           <h4>Siga-nos nas Redes Sociais</h4>
           <div>
             <a
@@ -46,7 +47,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={25} color="#D84261" />
+              <FaInstagram size={25} color="white" />
             </a>
             <a
               className="facebookIcon"
@@ -54,11 +55,10 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF size={25} color="#2A74E8" />
+              <FaFacebookF size={25} color="white" />
             </a>
           </div>
         </FooterMidle>
-        <img src={logo} alt="logo" />
       </FooterInfo>
 
       <FooterEnd>

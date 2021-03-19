@@ -23,19 +23,10 @@ export const FooterInfo = styled.div`
   margin-top: 30px;
   justify-content: space-between;
 
-  img {
-    height: 150px;
-    right: auto;
-  }
-
   @media screen and (max-width: 1300px) {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    img {
-      height: 100px;
-      width: 100px;
-    }
   }
 `;
 
@@ -63,6 +54,7 @@ export const FooterMidle = styled.div`
   display: flex;
   flex-direction: column;
   left: 0;
+  align-items: center;
 
   svg {
     margin-right: 10px;
@@ -77,6 +69,10 @@ export const FooterMidle = styled.div`
   div {
     display: flex;
     justify-content: center;
+  }
+
+  img {
+    width: 150px;
   }
 
   @media screen and (max-width: 1300px) {
