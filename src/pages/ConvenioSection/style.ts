@@ -16,12 +16,13 @@ export const Container = styled.div`
   }
 
   div {
-    display: flex;
+    display: inline-block;
+
     margin-top: 20px;
-    justify-content: space-between;
+    text-align: center;
 
     img {
-      height: 200px;
+      height: 150px;
     }
   }
 
@@ -29,10 +30,10 @@ export const Container = styled.div`
     padding: 0 10px 0px 10px;
 
     div {
-      display: inline-block;
       text-align: center;
 
       img {
+        height: 100px;
         margin-left: 10px;
       }
     }
