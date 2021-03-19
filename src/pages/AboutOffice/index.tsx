@@ -5,7 +5,7 @@ import React from 'react';
 
 import Slider from 'react-slick';
 
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import { Container } from './style';
 
@@ -19,7 +19,7 @@ const AboutOffice: React.FC = () => {
 
     return (
       <div className="nextArrow" onClick={onClick}>
-        <FaArrowRight size={30} color={colors.black} />
+        <IoIosArrowForward size={30} color={colors.black} />
       </div>
     );
   };
@@ -28,7 +28,7 @@ const AboutOffice: React.FC = () => {
     const { onClick } = props;
     return (
       <div className="prevArrow" onClick={onClick}>
-        <FaArrowLeft size={30} color={colors.black} />
+        <IoIosArrowBack size={30} color={colors.black} />
       </div>
     );
   };
