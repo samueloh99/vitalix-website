@@ -1,47 +1,28 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable react/button-has-type */
-/* eslint-disable no-unneeded-ternary */
-/* eslint-disable no-bitwise */
-/* eslint-disable consistent-return */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/no-array-index-key */
-
-import React, { useState, useEffect } from 'react';
-
-import { AiOutlineCalendar } from 'react-icons/ai';
+import React, { useState } from 'react';
 
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 import {
   Container,
-  Services,
-  ServiceOptions,
-  ServiceContent,
-  ContentInfo,
-  ContentInfoDescription,
+  ServicesTitle,
+  ServiceSubtitle,
+  ServiceContainer,
+  Wrapper,
+  ServiceDescription,
+  WrapContent,
+  WrapImgs,
 } from './style';
 
-import { ServiceData, subtitleDatas, titleDatas } from './Data';
-
-import * as colors from '../../styles/colors';
+import { ServiceData, TitleDatas, SubtitleDatas } from './Data';
 
 const ServiceSection: React.FC = () => {
   const [open, setOpen] = useState(-1);
-  const [type, setType] = useState('');
-  const [titleData, setTitleData] = useState('');
+  const [nameType, setNameType] = useState('');
+  const [subtitleType, setSubtitleType] = useState('');
 
-  useEffect(() => {
-    setTitleData('');
-  }, [type]);
-
-  const clickSubtitle = (subtitle: string) => {
-    setType(subtitle);
-  };
-
-  const toggleClick = (index: number, serviceData: string) => {
-    setTitleData(serviceData);
-    setType('');
+  const toggleClick = (index: number, title: string) => {
+    setSubtitleType('');
+    setNameType(title);
 
     if (index === open) {
       setOpen(-1);
@@ -50,226 +31,109 @@ const ServiceSection: React.FC = () => {
     }
   };
 
-  return (
-    <Container id="serviceSection">
-      <h1>Conheça nossos tratamentos</h1>
-      <div
-        className="linhaAzul"
-        style={{
-          width: '165px',
-          height: '3px',
-          backgroundColor: colors.blueshock,
-          marginTop: '5px',
-        }}
-      />
-      <Services>
-        <ServiceOptions>
-          {ServiceData.map((serviceData, index) =>
-            serviceData.subtitle ? (
-              <>
-                <div
-                  onClick={() => toggleClick(index, serviceData.title)}
-                  key={index}
-                  style={{
-                    marginBottom: open === index ? '0px' : '10px',
-                    borderRadius: open === index ? '5px 5px 0px 0px' : '5px',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {serviceData.title}
-                  {open === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </div>
-                <div
-                  style={{
-                    display: open === index ? 'flex' : 'none',
-                    opacity: open === index ? '1' : '0',
-                    borderRadius: open === index ? '0px 0px 5px 5px' : '5px',
-                  }}
-                  className="info"
-                >
-                  {serviceData.subtitle?.map(
-                    (subtitle, indexData) =>
-                      subtitle && (
-                        <div
-                          key={indexData}
-                          onClick={() => clickSubtitle(subtitle)}
-                          style={{ fontWeight: 'bold' }}
-                        >
-                          {subtitle}
-                        </div>
-                      ),
-                  )}
-                </div>
-              </>
-            ) : (
-              <div
-                onClick={() => toggleClick(index, serviceData.title)}
-                key={index}
-                style={{ fontWeight: 'bold' }}
-              >
-                {serviceData.title}
-              </div>
-            ),
-          )}
-        </ServiceOptions>
-        <ServiceContent>
-          {subtitleDatas.map(
-            (item, index) =>
-              item.id === type && (
-                <div key={index}>
-                  <ContentInfo>
-                    <ContentInfoDescription>
-                      <h4 style={{ fontSize: '20px' }}>{item.id}</h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc1}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc2}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc3}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc4}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc5}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc6}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc7}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc8}
-                      </h4>
-                      <h4
-                        style={{
-                          fontWeight: 'lighter',
-                          marginTop: '20px',
-                          fontSize: '17px',
-                        }}
-                      >
-                        {item.desc9}
-                      </h4>
-                      <button>
-                        AGENDE UM HORÁRIO
-                        <div />
-                        <AiOutlineCalendar />
-                      </button>
-                    </ContentInfoDescription>
-                    <div>
-                      {item.img ? <img src={item.img} alt="imgDesc" /> : <></>}
-                      {item.img2 ? (
-                        <img src={item.img2} alt="imgDesc2" />
-                      ) : (
-                        <></>
-                      )}
-                    </div>
-                  </ContentInfo>
-                </div>
-              ),
-          )}
-        </ServiceContent>
-        {titleDatas.map(
-          (item, index) =>
-            item.title === titleData && (
-              <div key={index}>
-                <ContentInfo>
-                  <ContentInfoDescription>
-                    <h4 style={{ fontSize: '20px' }}>{item.title}</h4>
-                    <h4
-                      style={{
-                        fontWeight: 'lighter',
-                        marginTop: '20px',
-                        fontSize: '17px',
-                      }}
-                    >
-                      {item.desc1}
-                    </h4>
-                    <h4
-                      style={{
-                        fontWeight: 'lighter',
-                        marginTop: '20px',
-                        fontSize: '17px',
-                      }}
-                    >
-                      {item.desc2}
-                    </h4>
-                    <h4
-                      style={{
-                        fontWeight: 'lighter',
-                        marginTop: '20px',
-                        fontSize: '17px',
-                      }}
-                    >
-                      {item.desc3}
-                    </h4>
+  const toggleClickSubtitle = (index: number, title: string) => {
+    setNameType('');
+    setSubtitleType(title);
+  };
 
-                    <button>
-                      AGENDE UM HORÁRIO
-                      <div />
-                      <AiOutlineCalendar />
-                    </button>
-                  </ContentInfoDescription>
-                  <div>
-                    {item.img ? <img src={item.img} alt="imgDesc" /> : <></>}
-                    {item.img2 ? <img src={item.img2} alt="imgDesc2" /> : <></>}
-                  </div>
-                </ContentInfo>
-              </div>
-            ),
-        )}
-      </Services>
+  return (
+    <Container>
+      <h1>Conheça os nossos tratamentos</h1>
+      <Wrapper>
+        <ServiceContainer>
+          {ServiceData.map(item => {
+            const { id, title, subtitle } = item;
+
+            return (
+              <>
+                {subtitle ? (
+                  <ServicesTitle
+                    key={id}
+                    onClick={() => toggleClick(id, title)}
+                  >
+                    <h1>{title}</h1>
+                    {open === id ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                  </ServicesTitle>
+                ) : (
+                  <ServicesTitle
+                    key={id}
+                    onClick={() => toggleClick(id, title)}
+                  >
+                    <h1>{title}</h1>
+                  </ServicesTitle>
+                )}
+                {subtitle?.map(itemSubtitle => {
+                  const { idSubtitle, desc } = itemSubtitle;
+                  return (
+                    <ServiceSubtitle
+                      key={idSubtitle}
+                      onClick={() => toggleClickSubtitle(idSubtitle, desc)}
+                      opacity={open === id ? '1' : '0'}
+                      display={open === id ? 'block' : 'none'}
+                    >
+                      <h1>{desc}</h1>
+                    </ServiceSubtitle>
+                  );
+                })}
+              </>
+            );
+          })}
+        </ServiceContainer>
+        {TitleDatas.map(item => {
+          const { title, desc1, desc2, desc3, img } = item;
+          return (
+            nameType === title && (
+              <ServiceDescription>
+                <WrapContent>
+                  <h1>{item.title}</h1>
+                  <h4>{desc1}</h4>
+                  <h4>{desc2}</h4>
+                  <h4>{desc3}</h4>
+                </WrapContent>
+                <WrapImgs>
+                  {img && <img src={img} alt="imgServiceDesc" />}
+                </WrapImgs>
+              </ServiceDescription>
+            )
+          );
+        })}
+        {SubtitleDatas.map(item => {
+          const {
+            id,
+            desc1,
+            desc2,
+            desc3,
+            desc4,
+            desc5,
+            desc6,
+            desc7,
+            desc8,
+            desc9,
+            img,
+          } = item;
+          return (
+            id === subtitleType && (
+              <ServiceDescription>
+                <WrapContent>
+                  <h1>{id}</h1>
+                  <h4>{desc1}</h4>
+                  <h4>{desc2}</h4>
+                  <h4>{desc3}</h4>
+                  <h4>{desc4}</h4>
+                  <h4>{desc5}</h4>
+                  <h4>{desc6}</h4>
+                  <h4>{desc7}</h4>
+                  <h4>{desc8}</h4>
+                  <h4>{desc9}</h4>
+                </WrapContent>
+                <WrapImgs>
+                  {img && <img src={img} alt="imgServiceDesc" />}
+                </WrapImgs>
+              </ServiceDescription>
+            )
+          );
+        })}
+      </Wrapper>
     </Container>
   );
 };

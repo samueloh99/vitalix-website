@@ -3,11 +3,9 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
 
-import {
-  AiOutlineArrowLeft,
-  AiOutlineArrowRight,
-  AiOutlineCalendar,
-} from 'react-icons/ai';
+import { AiOutlineCalendar } from 'react-icons/ai';
+
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import { Container } from './style';
 
@@ -34,18 +32,28 @@ const Home: React.FC = () => {
 
   return (
     <Container className="slider" id="home">
-      <AiOutlineArrowLeft
+      <IoIosArrowBack
         className="leftArrow"
-        color="black"
-        style={{ cursor: 'pointer' }}
+        color={colors.grey}
+        style={{
+          cursor: 'pointer',
+          background: 'rgba(255,255,255,0.8)',
+          height: '100px',
+          opacity: '0.5',
+        }}
         size={40}
         onClick={goLeft}
       />
-      <AiOutlineArrowRight
+      <IoIosArrowForward
         className="rightArrow"
-        style={{ cursor: 'pointer' }}
+        style={{
+          cursor: 'pointer',
+          background: 'rgba(255,255,255,0.8)',
+          height: '100px',
+          opacity: '0.5',
+        }}
         size={40}
-        color="black"
+        color={colors.grey}
         onClick={goRight}
       />
       {SliderData.map((item, index) => {

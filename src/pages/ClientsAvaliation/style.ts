@@ -33,7 +33,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const MainCard = styled.div`
   h1 {
     font-size: 20px;
     color: ${colors.black};

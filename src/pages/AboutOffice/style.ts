@@ -20,10 +20,6 @@ export const Container = styled.div`
     padding: 40px;
   }
 
-  .slick-slide .slick-active .slick-current {
-    background: red;
-  }
-
   .prevArrow {
     position: absolute;
     top: 50%;

@@ -1,92 +1,159 @@
-import bruxismo1 from '../../assets/tratamentos/bruxismo.jpeg';
-import bruxismo2 from '../../assets/tratamentos/bruxismo2.jpeg';
-import gengivectomia from '../../assets/tratamentos/gengivectomia.jpeg';
-import periodontia from '../../assets/tratamentos/periodontia.jpeg';
-import proteseRemovivel from '../../assets/tratamentos/protese-removivel.jpeg';
-import proteseTotal from '../../assets/tratamentos/protese-total.jpeg';
-import protese from '../../assets/tratamentos/protese.jpeg';
-import proteseFixa from '../../assets/tratamentos/proteseFixa.jpeg';
-import retratamento from '../../assets/tratamentos/retratamento.jpeg';
-import aparelhoAuto from '../../assets/tratamentos/aparelhoAuto.jpeg';
-// import aparelhoAutoEstetico from '../../assets/tratamentos/aparelhoAutoEstetico.jpeg';
-import aparelhoConvencional from '../../assets/tratamentos/aparelhoConvencional.jpeg';
-// import aparelhoEstetico from '../../assets/tratamentos/aparelhoEstetico.jpeg';
-import endodontia from '../../assets/tratamentos/endodontia.jpeg';
-import enxertoOsseo1 from '../../assets/tratamentos/enxertoOsseo.jpeg';
-import enxertoOsseo2 from '../../assets/tratamentos/enxertoOsseo2.jpeg';
-import extracaoSimples from '../../assets/tratamentos/extracaoSimples.jpeg';
-import invisalign from '../../assets/tratamentos/invisalign.jpeg';
-import lente from '../../assets/tratamentos/lente.jpeg';
-import ortodontia from '../../assets/tratamentos/ortodontia.jpeg';
-import preenchimento1 from '../../assets/tratamentos/preenchimento.jpeg';
-import preenchimento2 from '../../assets/tratamentos/preenchimento2.jpeg';
-import raspagemDentaria from '../../assets/tratamentos/raspagem-dentaria.jpeg';
-import siso1 from '../../assets/tratamentos/siso1.jpeg';
-// import superiorInferior from '../../assets/tratamentos/superiorInferior.jpeg';
-import toxina from '../../assets/tratamentos/toxina.jpeg';
-import tratamentoEndodontico from '../../assets/tratamentos/tratamentoEndodontico.jpeg';
-import clareamento from '../../assets/tratamentos/clareamento.jpeg';
-import facedireta from '../../assets/tratamentos/facedireta.jpeg';
-import implante1 from '../../assets/tratamentos/implante.jpeg';
-import implante2 from '../../assets/tratamentos/implante2.jpeg';
-import restauracao from '../../assets/tratamentos/restauracao.jpeg';
+import bruxismo1 from '../../assets/tratamentos/bruxismo.jpg';
+import gengivectomia from '../../assets/tratamentos/gengivectomia.jpg';
+import periodontia from '../../assets/tratamentos/periodontia.jpg';
+import proteseRemovivel from '../../assets/tratamentos/protese-removivel.jpg';
+import proteseTotal from '../../assets/tratamentos/protese-total.jpg';
+import protese from '../../assets/tratamentos/protese.jpg';
+import proteseFixa from '../../assets/tratamentos/proteseFixa.jpg';
+import retratamento from '../../assets/tratamentos/retratamento.jpg';
+import aparelhoAuto from '../../assets/tratamentos/aparelhoAuto.jpg';
+// import aparelhoAutoEstetico from '../../assets/tratamentos/aparelhoAutoEstetico.jpg';
+import aparelhoConvencional from '../../assets/tratamentos/aparelhoConvencional.jpg';
+// import aparelhoEstetico from '../../assets/tratamentos/aparelhoEstetico.jpg';
+import endodontia from '../../assets/tratamentos/endodontia.jpg';
+import enxertoOsseo1 from '../../assets/tratamentos/enxertoOsseo.jpg';
+import extracaoSimples from '../../assets/tratamentos/extracaoSimples.jpg';
+import invisalign from '../../assets/tratamentos/invisalign.jpg';
+import lente from '../../assets/tratamentos/lente.jpg';
+import ortodontia from '../../assets/tratamentos/ortodontia.jpg';
+import preenchimento1 from '../../assets/tratamentos/preenchimento.jpg';
+import preenchimento2 from '../../assets/tratamentos/preenchimento2.jpg';
+import raspagemDentaria from '../../assets/tratamentos/raspagem-dentaria.jpg';
+import siso1 from '../../assets/tratamentos/siso1.jpg';
+// import superiorInferior from '../../assets/tratamentos/superiorInferior.jpg';
+import toxina from '../../assets/tratamentos/toxina.jpg';
+import tratamentoEndodontico from '../../assets/tratamentos/tratamentoEndodontico.jpg';
+import clareamento from '../../assets/tratamentos/clareamento.jpg';
+import facedireta from '../../assets/tratamentos/facedireta.jpg';
+import implante1 from '../../assets/tratamentos/implante.jpg';
+import implante2 from '../../assets/tratamentos/implante2.jpg';
+import restauracao from '../../assets/tratamentos/restauracao.jpg';
 
 export const ServiceData = [
   {
+    id: 1,
     title: 'Dentística Restauradora',
-    subtitle: ['Restauração Dental', 'Reconstrução Dental'],
+    subtitle: [
+      { idSubtitle: 1, desc: 'Restauração Dental' },
+      { idSubtitle: 2, desc: 'Reconstrução Dental' },
+    ],
   },
   {
+    id: 2,
     title: 'Odontologia Estética',
     subtitle: [
-      'Clareamento Dental',
-      'Faceta Direta em Resina Composta',
-      'Lente de Contato Dental',
-      'Toxina Botulínica',
-      'Preenchimento Facial',
+      {
+        idSubtitle: 1,
+        desc: 'Clareamento Dental',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Faceta Direta em Resina Composta',
+      },
+      {
+        idSubtitle: 3,
+        desc: 'Lente de Contato Dental',
+      },
+      {
+        idSubtitle: 4,
+        desc: 'Toxina Botulínica',
+      },
+      {
+        idSubtitle: 5,
+        desc: 'Preenchimento Facial',
+      },
     ],
   },
   {
+    id: 3,
     title: 'Ortodontia',
     subtitle: [
-      'Aparelho Ortodôntico Convencional ',
-      'Aparelho Ortodôntico Auto-Ligado',
-      'INVISALIGN (Alinhadores Invisíveis Ortodônticos)',
+      {
+        idSubtitle: 1,
+        desc: 'Aparelho Ortodôntico Convencional',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Aparelho Ortodôntico Auto-Ligado',
+      },
+      {
+        idSubtitle: 3,
+        desc: 'INVISALIGN (Alinhadores Invisíveis Ortodônticos)',
+      },
     ],
   },
   {
+    id: 4,
     title: 'Cirurgia',
-    subtitle: ['Extração de Dente Simples', 'Extração de Sisos'],
+    subtitle: [
+      {
+        idSubtitle: 1,
+        desc: 'Extração de Dente Simples',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Extração de Sisos',
+      },
+    ],
   },
   {
+    id: 5,
     title: 'Implantes',
-    subtitle: ['Implante de Protocolo Superior e Inferior', 'Enxerto Ósseo'],
+    subtitle: [
+      {
+        idSubtitle: 1,
+        desc: 'Implante de Protocolo Superior e Inferior',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Enxerto Ósseo',
+      },
+    ],
   },
   {
+    id: 6,
     title: 'Endodontia',
     subtitle: [
-      'Tratamento de Canal / Endodôntico',
-      'Retratamento de Canal / Endodôntico',
+      {
+        idSubtitle: 1,
+        desc: 'Tratamento de Canal / Endodôntico',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Retratamento de Canal / Endodôntico',
+      },
     ],
   },
   {
+    id: 7,
     title: 'Prótese Dental',
     subtitle: [
-      'Prótese Fixa',
-      'Prótese Móvel / Removível',
-      'Prótese Total Dentária',
+      {
+        idSubtitle: 1,
+        desc: 'Prótese Fixa',
+      },
+      {
+        idSubtitle: 2,
+        desc: 'Prótese Móvel / Removível',
+      },
+      {
+        idSubtitle: 3,
+        desc: 'Prótese Total Dentária',
+      },
     ],
   },
   {
+    id: 8,
     title: 'Periodontia',
-    subtitle: ['Raspagem Dentária / Limpeza Dentária', 'Gengivectomia'],
+    subtitle: [
+      { idSubtitle: 1, desc: 'Raspagem Dentária / Limpeza Dentária' },
+      { idSubtitle: 2, desc: 'Gengivectomia' },
+    ],
   },
-  {
-    title: 'Bruxismo',
-  },
+  { id: 9, title: 'Bruxismo' },
 ];
 
-export const titleDatas = [
+export const TitleDatas = [
   {
     title: 'Ortodontia',
     desc1:
@@ -134,7 +201,6 @@ export const titleDatas = [
     desc2:
       'Para o tratamento temos diversas opções, uma delas é a placa acrílica ou a placa miorrelaxante, também é possível fazer aplicação de toxina botulínica para diminuir a força do músculo masseter e aliviar a musculatura impedindo que a contração seja formada o que tira a força do músculo que não consegue mais causar os desgastes nos dentes.',
     img: bruxismo1,
-    img2: bruxismo2,
   },
   {
     title: 'Extração Dental',
@@ -150,7 +216,7 @@ export const titleDatas = [
   },
 ];
 
-export const subtitleDatas = [
+export const SubtitleDatas = [
   {
     id: 'Clareamento Dental',
     desc1:
@@ -198,7 +264,6 @@ export const subtitleDatas = [
     desc2:
       'Com o envelhecimento, nosso rosto passa a ter um aspecto de cansaço devido a perda de volume em áreas específicas, que nada mais é do que o próprio processo de envelhecimento, processo que ocorre devido perda do ácido hialurônico que já está presente na pele.',
     img: preenchimento1,
-    img2: preenchimento2,
   },
   {
     id: 'Implante de Protocolo Superior e Inferior',
@@ -207,14 +272,12 @@ export const subtitleDatas = [
     desc2:
       'Para a cirurgia, é necessário instalar de 4 a 8 implantes que irão suportar futuramente uma prótese. O resultado final costuma ser muito satisfatório aos pacientes pois a prótese é fixa sobre os implantes, ou seja, não corre o risco de soltar de lá como uma prótese total (dentadura), o que gera segurança de mastigação. ',
     img: implante1,
-    img2: implante2,
   },
   {
     id: 'Enxerto Ósseo',
     desc1:
       'O procedimento de enxerto ósseo é um procedimento na qual um tecido ósseo (em pó ou bloco) é depositado no local onde não há osso suficiente para colocação dos implantes dentários, com finalidade de produzir mais osso na região e futuramente obter espaço suficiente naquela região, deixando-a mais volumosa, alta e espessa, tornando assim o local apto para colocação de implantes dentários.',
     img: enxertoOsseo1,
-    img2: enxertoOsseo2,
   },
   {
     id: 'Aparelho Ortodôntico Convencional ',

@@ -39,11 +39,22 @@ export const Container = styled.div`
     position: absolute;
     right: 0;
     z-index: 10;
+    transition: 1s ease-in-out !important;
+
+    &:hover {
+      background-color: black !important;
+    }
   }
+
   .leftArrow {
     position: absolute;
     left: 0;
     z-index: 10;
+    transition: 1s ease-in-out !important;
+
+    &:hover {
+      background-color: black !important;
+    }
   }
 
   img {

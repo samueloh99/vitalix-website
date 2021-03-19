@@ -6,14 +6,14 @@ import React from 'react';
 
 import Slider from 'react-slick';
 
-import { Container, Card } from './style';
+import { Container, MainCard } from './style';
 
 import { ClientsData } from './clientsData';
 
 const ClientsAvaliation: React.FC = () => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -47,11 +47,11 @@ const ClientsAvaliation: React.FC = () => {
       <Slider {...settings}>
         {ClientsData.map((item, index) => {
           return (
-            <Card key={index}>
+            <MainCard key={index}>
               <p style={{ marginBottom: '30px' }}>❤️</p>
               <h1>{item.name}</h1>
               <h4>{item.comment}</h4>
-            </Card>
+            </MainCard>
           );
         })}
       </Slider>
