@@ -6,19 +6,44 @@ import React from 'react';
 
 import Slider from 'react-slick';
 
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
 import { Container, MainCard } from './style';
 
 import { ClientsData } from './clientsData';
 
+import * as colors from '../../styles/colors';
+
 const ClientsAvaliation: React.FC = () => {
+  const NextArrow = (props: { onClick: any }) => {
+    const { onClick } = props;
+
+    return (
+      <div className="nextArrow" onClick={onClick}>
+        <IoIosArrowForward size={30} color={colors.black} />
+      </div>
+    );
+  };
+
+  const PrevArrow = (props: { onClick: any }) => {
+    const { onClick } = props;
+    return (
+      <div className="prevArrow" onClick={onClick}>
+        <IoIosArrowBack size={30} color={colors.black} />
+      </div>
+    );
+  };
+
   const settings = {
     dots: true,
-    infinite: true,
+    // infinite: true,
     speed: 500,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
     slidesToShow: 4,
     slidesToScroll: 4,
+    nextArrow: <NextArrow onClick />,
+    prevArrow: <PrevArrow onClick />,
     initialSlide: 0,
     responsive: [
       {
