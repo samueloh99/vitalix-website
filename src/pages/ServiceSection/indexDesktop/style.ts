@@ -1,8 +1,19 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { shade } from 'polished';
 
 import * as colors from '../../../styles/colors';
+
+const appearFromLeft = keyframes`
+  from{
+    opacity:0;
+    transform:translateX(-50px)
+  }
+  to{
+    opacity:1;
+    transform:translateX(0)
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -67,6 +78,8 @@ export const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  animation: ${appearFromLeft} 1s;
 `;
 
 export const CardTitle = styled.div`
