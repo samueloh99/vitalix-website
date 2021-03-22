@@ -50,7 +50,7 @@ const InfoSection: React.FC = () => {
           <CardFront
             style={{ background: '#dfdfdf', backgroundImage: `url(${card3})` }}
           >
-            <h1>NOSSA VALOR</h1>
+            <h1>NOSSO VALOR</h1>
           </CardFront>
           <CardBack>
             <ul>

@@ -60,6 +60,7 @@ export const Container = styled.div`
   img {
     position: absolute;
     z-index: -10;
+    width: 100%;
   }
 
   .mobileImg {
