@@ -23,8 +23,8 @@ const App: React.FC = () => {
     <Router>
       <Navbar />
       <Home />
-      <InfoSection />
       <AboutOffice />
+      <InfoSection />
       <ServiceSection />
       <ClientsAvaliation />
       <AppointmentSection />

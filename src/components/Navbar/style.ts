@@ -15,7 +15,7 @@ export const Header = styled.header`
   background: ${colors.white};
   padding: 14px 135px 14px 135px;
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
     padding: 0;
   }
 `;
@@ -29,7 +29,7 @@ export const HeaderContent = styled.div`
   a > img {
     height: 100px;
   }
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
     img {
       margin-left: 10px;
     }
@@ -39,7 +39,7 @@ export const HeaderContent = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -91,6 +91,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
     text-decoration: none;
     color: ${colors.black};
     font-weight: lighter;
+    font-size: 13px;
 
     & + a {
       margin-left: 20px;
@@ -106,7 +107,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
     }
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
     position: absolute;
     top: 105px;
     left: ${({ click }) => (click ? 0 : '-200%')};

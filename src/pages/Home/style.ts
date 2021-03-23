@@ -112,7 +112,7 @@ export const Container = styled.div`
       h4 {
         font-size: 17px;
         margin: 0px 0px 10px 0px;
-        width: 300px;
+        width: 260px;
       }
       a {
         margin: 40px;
