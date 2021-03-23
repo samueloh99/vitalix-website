@@ -32,7 +32,7 @@ const IndexDesktop: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container id="serviceSection">
       <h1>Conheça os nossos tratamentos</h1>
       <Wrapper>
         <ServiceOptions>
