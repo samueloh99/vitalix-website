@@ -78,10 +78,6 @@ export const Modal: React.FC<ModalProps> = ({ serviceId, isOpen, onClose }) => {
                     desc2,
                     desc3,
                     desc4,
-                    desc5,
-                    desc6,
-                    desc7,
-                    desc8,
                     img,
                   } = subitem;
                   return (
@@ -93,10 +89,6 @@ export const Modal: React.FC<ModalProps> = ({ serviceId, isOpen, onClose }) => {
                           <h4>{desc2}</h4>
                           <h4>{desc3}</h4>
                           <h4>{desc4}</h4>
-                          <h4>{desc5}</h4>
-                          <h4>{desc6}</h4>
-                          <h4>{desc7}</h4>
-                          <h4>{desc8}</h4>
                           {img && <img src={img} alt="imgServiceMob" />}
                         </div>
                       </ModalServiceContent>

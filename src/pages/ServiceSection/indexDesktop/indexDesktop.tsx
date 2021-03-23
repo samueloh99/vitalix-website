@@ -81,11 +81,6 @@ const IndexDesktop: React.FC = () => {
                       desc2,
                       desc3,
                       desc4,
-                      desc5,
-                      desc6,
-                      desc7,
-                      desc8,
-                      desc9,
                     } = subitem;
 
                     return (
@@ -93,15 +88,10 @@ const IndexDesktop: React.FC = () => {
                         <CardInfoDescription>
                           <h1>{name}</h1>
                           <div className="textDesc">
-                            <h4>{desc1}</h4>
-                            <h4>{desc2}</h4>
-                            <h4>{desc3}</h4>
-                            <h4>{desc4}</h4>
-                            <h4>{desc5}</h4>
-                            <h4>{desc6}</h4>
-                            <h4>{desc7}</h4>
-                            <h4>{desc8}</h4>
-                            <h4>{desc9}</h4>
+                            <h5>{desc1}</h5>
+                            <h5>{desc2}</h5>
+                            <h5>{desc3}</h5>
+                            <h5>{desc4}</h5>
                           </div>
                           <div className="imgDesc">
                             <img src={img} alt="descImg" />

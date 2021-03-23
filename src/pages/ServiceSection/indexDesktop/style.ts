@@ -135,17 +135,17 @@ export const CardInfoDescription = styled.div`
   .textDesc {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 20px;
     color: ${colors.blueDark};
-    height: 115px;
+    height: 40px;
   }
 
-  h4 {
-    font-size: 15px;
+  h5 {
+    font-size: 13px;
     color: ${colors.black};
   }
 
