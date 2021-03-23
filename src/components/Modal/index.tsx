@@ -1,62 +1,113 @@
+/* eslint-disable no-shadow */
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { MouseEvent, TouchEvent } from 'react';
 
 import { IoMdClose } from 'react-icons/io';
 
-import './style.css';
+import { AiOutlineDown } from 'react-icons/ai';
 
-import { Data } from './Data';
+import {
+  ServiceDataSubtitle,
+  SubtitlesDescription,
+} from '../../pages/ServiceSection/Data';
+
+import {
+  ModalContainer,
+  ModalOverlay,
+  ModalBox,
+  ModalCloseBtn,
+  ModalServiceContent,
+  ModalTitle,
+} from './style';
 
 interface ModalProps {
+  serviceId: number;
   isOpen: boolean;
-  id: number;
   onClose: () => void;
 }
 
-export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, id }) => {
-  const outsideRef = React.useRef(null);
+export const Modal: React.FC<ModalProps> = ({ serviceId, isOpen, onClose }) => {
+  const overlayRef = React.useRef(null);
 
-  const handleCloseOnOverlay = (
-    e: React.MouseEvent<HTMLElement, MouseEvent>,
+  const handleOverlayClick = (
+    e:
+      | React.TouchEvent
+      | React.MouseEvent<HTMLDivElement, TouchEvent | MouseEvent>,
   ) => {
-    if (e.target === outsideRef.current) {
+    if (e.target === overlayRef.current) {
       onClose();
     }
   };
 
   return isOpen ? (
-    <div className="modalDrCard">
-      <div
-        ref={outsideRef}
-        className="modal__overlay"
-        onClick={handleCloseOnOverlay}
+    <ModalContainer>
+      <ModalOverlay
+        onClick={() => handleOverlayClick}
+        className="modal_overlay"
       />
-      {Data.map(
-        (item, index) =>
-          item.id === id && (
-            // eslint-disable-next-line react/no-array-index-key
-            <div key={index} className="modalDrCard__box">
-              <button className="modalDrCard__close" onClick={onClose}>
-                <IoMdClose />
-              </button>
-              <div className="modalDrCard__title">{item.name}</div>
-              <div
-                className="modalDrCard__content"
-                style={{ marginTop: '30px' }}
-              >
-                {item.desc1}
-              </div>
-              <div className="modalDrCard__content">{item.desc2}</div>
-              <div className="modalDrCard__content">{item.desc3}</div>
-              <div className="modalDrCard__content">{item.desc4}</div>
-              <div className="modalDrCard__content">{item.desc5}</div>
-              <div className="modalDrCard__content">{item.desc6}</div>
-              <div className="modalDrCard__content">{item.desc7}</div>
-            </div>
-          ),
-      )}
-    </div>
+      <ModalBox className="modal_box">
+        <ModalCloseBtn
+          onClick={onClose}
+          ref={overlayRef}
+          className="modal_close_btn"
+        >
+          <IoMdClose color="black" size={20} />
+        </ModalCloseBtn>
+        {ServiceDataSubtitle.map(item => {
+          const { idSubtitle, subtitle, desc1, desc2, desc3, img } = item;
+          return (
+            idSubtitle === serviceId && (
+              <ModalTitle className="modal_title">
+                <h1>{subtitle}</h1>
+                <h4>{desc1}</h4>
+                <h4>{desc2}</h4>
+                <h4>{desc3}</h4>
+                {img && <img src={img} alt="imgMobile" />}
+
+                <button>
+                  <AiOutlineDown size={20} color="black" />
+                </button>
+
+                {SubtitlesDescription.map(subitem => {
+                  const {
+                    value,
+                    name,
+                    desc1,
+                    desc2,
+                    desc3,
+                    desc4,
+                    desc5,
+                    desc6,
+                    desc7,
+                    desc8,
+                    img,
+                  } = subitem;
+                  return (
+                    value === serviceId && (
+                      <ModalServiceContent>
+                        <h1>{name}</h1>
+                        <div className="serviceInfo">
+                          <h4>{desc1}</h4>
+                          <h4>{desc2}</h4>
+                          <h4>{desc3}</h4>
+                          <h4>{desc4}</h4>
+                          <h4>{desc5}</h4>
+                          <h4>{desc6}</h4>
+                          <h4>{desc7}</h4>
+                          <h4>{desc8}</h4>
+                          {img && <img src={img} alt="imgServiceMob" />}
+                        </div>
+                      </ModalServiceContent>
+                    )
+                  );
+                })}
+              </ModalTitle>
+            )
+          );
+        })}
+      </ModalBox>
+    </ModalContainer>
   ) : null;
 };

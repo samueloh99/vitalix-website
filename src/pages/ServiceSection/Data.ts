@@ -101,8 +101,8 @@ export const ServiceDataSubtitle = [
   },
   {
     idSubtitle: 2,
-    title: 'Odontologia Estética',
-    desc1: 'teste',
+    subtitle: 'Odontologia Estética',
+    // desc1: 'teste',
   },
   {
     idSubtitle: 3,
