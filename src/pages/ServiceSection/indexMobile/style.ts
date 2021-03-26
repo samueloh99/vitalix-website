@@ -12,8 +12,10 @@ export const Container = styled.div`
 
     h1 {
       font-size: 30px;
-      color: ${colors.grey};
+      margin-top: 40px;
+      color: ${colors.blueshock};
       margin-bottom: 40px;
+      text-transform: uppercase;
     }
   }
 `;

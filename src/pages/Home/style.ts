@@ -1,8 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import * as colors from '../../styles/colors';
 
+const appearFromLeft = keyframes`
+  from{
+    opacity:0;
+    transform:translateX(-50px)
+  }
+  to{
+    opacity:1;
+    transform:translateX(0)
+  }
+`;
+
 export const Container = styled.div`
+  animation: ${appearFromLeft} 1.5s;
   width: 100%;
   height: 80vh;
   box-sizing: border-box;

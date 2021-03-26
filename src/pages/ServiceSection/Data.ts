@@ -9,7 +9,7 @@ import retratamento from '../../assets/tratamentos/retratamento.jpg';
 import aparelhoAuto from '../../assets/tratamentos/aparelhoautoligado.jpeg';
 import aparelhoConvencional from '../../assets/tratamentos/aparelhoConvencional.jpg';
 import endodontia from '../../assets/tratamentos/endodontia.jpg';
-import enxertoOsseo1 from '../../assets/tratamentos/enxertoOsseo.jpeg';
+import enxertoOsseo1 from '../../assets/tratamentos/enxerto.jpeg';
 import extracaoSimples from '../../assets/tratamentos/extracaoSimples.jpg';
 import invisalign from '../../assets/tratamentos/invisalign.jpg';
 import lente from '../../assets/tratamentos/lente.jpg';
@@ -21,8 +21,10 @@ import toxina from '../../assets/tratamentos/toxina.jpg';
 import tratamentoEndodontico from '../../assets/tratamentos/tratamentoEndodontico.jpg';
 import clareamento from '../../assets/tratamentos/clareamento.jpg';
 import facedireta from '../../assets/tratamentos/facedireta.jpg';
-import implante1 from '../../assets/tratamentos/implante.jpg';
+import implante1 from '../../assets/tratamentos/superiorInferior.jpeg';
 import restauracao from '../../assets/tratamentos/restauracao.jpg';
+import unitario from '../../assets/tratamentos/unitario.jpeg';
+import reconstrucao from '../../assets/tratamentos/reconstrucao.jpeg';
 
 export const ServiceData = [
   {
@@ -123,7 +125,7 @@ export const ServiceDataSubtitle = [
     idSubtitle: 5,
     subtitle: 'Implantes',
     desc1:
-      'Os implantes dentários são pinos confeccionados em titânio que visam substituir as raízes dos dentes perdidos, possibilitando a confecção de dentes(coroas) sobre os implantes, devolvendo a mastigação e a estética perdida. Os implantes são instalados em uma cirurgia simples, rápida e indolor.',
+      'Os implantes dentários são pinos confeccionados em titânio que visam substituir as raízes dos dentes perdidos, possibilitando a confecção de dentes(coroas) sobre os implantes, devolvendo a mastigação e a estética perdida.',
     desc2:
       'Elas podem ser classificadas em duas fases, a fase cirúrgica, que é o primeiro momento onde instalamos o implante intra-ósseo; e a fase protética, que é posterior à fase cirúrgica onde na qual confeccionamos a coroa dentária para ser fixada sobre o implante já instalado.',
   },
@@ -172,7 +174,7 @@ export const SubtitlesDescription = [
     name: 'Reconstrução Dental',
     desc1:
       'É a arte de reconstruir e corrigir imperfeições dos dentes quando perdem alguma estrutura anatômica, devolvendo a condição natural dos dentes. É indicada quando parte do dente é fraturado ou afetado pela cárie. Podem ser realizadas para preenchimentos de espaços e correções de forma e cor.',
-    img: restauracao,
+    img: reconstrucao,
   },
   {
     value: 2,
@@ -229,9 +231,9 @@ export const SubtitlesDescription = [
   },
   {
     value: 3,
-    name: 'INVISALIGN (Alinhadores Invisíveis Ortodônticos)',
+    name: 'INVISALIGN',
     desc1:
-      'O Invisalign faz parte dos “alinhadores invisíveis”, sendo uma marca internacional e é um dos aparelhos mais modernos existentes atualmente pois são confeccionados com a ajuda de softwares específicos, sob medida, de acordo com a arcada dentária do paciente.',
+      'O Invisalign faz parte dos “alinhadores invisíveis”, sendo uma marca internacional e é um dos aparelhos mais modernos existentes atualmente.',
     desc2:
       'Ele oferece praticidade por serem removíveis; estética por serem praticamente invisíveis na boca; rápidos na movimentação dos dentes pela modernidade do aparelho; e previsíveis graças a tecnologia moderna que permite que a visualização do resultado final do tratamento em uma tela digital.',
     img: invisalign,
@@ -252,7 +254,14 @@ export const SubtitlesDescription = [
   },
   {
     value: 5,
-    name: 'Implante de Protocolo Superior e Inferior',
+    name: 'Implantes Unitários',
+    desc1:
+      'É um procedimento rápido e indolor, indicado para quem tem a ausência de um único dente em determinada região da arcada dentária. Esse procedimento cirúrgico acaba evitando a reabsorção óssea da região que pode ocorrer se não for feito o implante, preservando o osso.',
+    img: unitario,
+  },
+  {
+    value: 5,
+    name: 'Protocolo Superior e Inferior',
     desc1:
       'Esse modelo de cirurgia é indicado quando grande parte dos dentes do paciente estão comprometidos e o paciente necessita extrair todos os dentes; ou se já possui ausência de todos os dentes.',
     desc2:
@@ -308,7 +317,6 @@ export const SubtitlesDescription = [
       'A Periodontite é uma doença infecciosa que acomete as estruturas ao redor do dente, chegando até a causar mobilidade (ficar mole).',
     desc2:
       'Ela costuma evoluir a partir do tártaro, que por sua vez se origina do acúmulo de placa bacteriana que não foi removido durante a higienização dos dentes.',
-    desc3: 'É uma doença comum, porém grave que pode levar a perda dos dentes.',
     desc4:
       'O tratamento se faz através da raspagem dos dentes para remoção do tártaro, eliminando as toxinas que podem causar prejuízos ao periodonto.',
     img: raspagemDentaria,

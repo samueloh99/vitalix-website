@@ -65,7 +65,7 @@ const IndexDesktop: React.FC = () => {
                             <h4>{desc2}</h4>
                             <h4>{desc3}</h4>
                           </div>
-                          {img && <img src={img} alt="imgService" />}
+                          {/* {img && <img src={img} alt="imgService" />} */}
                         </>
                       )
                     );

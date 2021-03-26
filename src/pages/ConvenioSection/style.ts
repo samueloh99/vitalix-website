@@ -6,13 +6,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0px 160px 0px 160px;
-  margin-top: 50px;
+  padding: 80px 160px 50px 160px;
   margin-bottom: 50px;
+  background: white;
 
   h1 {
-    color: ${colors.grey};
-    font-size: 30px;
+    color: ${colors.blueshock};
+    font-size: 36px;
+    text-transform: uppercase;
   }
 
   div {
@@ -28,6 +29,10 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1300px) {
     padding: 0 10px 0px 10px;
+
+    h1 {
+      margin-top: 40px;
+    }
 
     div {
       text-align: center;

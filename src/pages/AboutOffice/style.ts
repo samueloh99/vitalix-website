@@ -6,12 +6,13 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0px 160px 0px 160px;
-  margin: 200px 0px 200px 0px;
+  margin: 100px 0px 200px 0px;
 
   h1 {
-    font-size: 30px;
-    color: ${colors.grey};
+    font-size: 36px;
+    color: ${colors.blueshock};
     margin-bottom: 70px;
+    text-transform: uppercase;
   }
 
   img {

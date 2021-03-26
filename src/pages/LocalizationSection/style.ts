@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 0px 160px 0px 160px;
   margin-bottom: 200px;
-  margin-top: 100px;
+  margin-top: 40px;
   height: 100%;
 
   @media screen and (max-width: 1300px) {
@@ -18,10 +18,11 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   h1 {
-    font-size: 30px;
-    color: ${colors.grey};
+    font-size: 36px;
+    color: ${colors.blueshock};
+    text-transform: uppercase;
   }
 `;
 
@@ -32,11 +33,12 @@ export const Content = styled.div`
 
   div {
     width: 500px;
-    margin: 0px 10px 0px 30px;
+    margin: 85px 10px 0px 30px;
+    text-align: center;
 
     h4 {
       font-size: 17px;
-      color: ${colors.grey};
+      color: ${colors.black};
       margin-bottom: 30px;
     }
   }
@@ -44,6 +46,7 @@ export const Content = styled.div`
   .mapDesktop {
     border-radius: 10px;
     cursor: pointer;
+    width: 500px;
   }
 
   .mapMobile {
@@ -55,6 +58,7 @@ export const Content = styled.div`
   @media screen and (max-width: 1300px) {
     flex-direction: column;
     width: 100%;
+    text-align: center;
 
     div {
       width: 350px;
@@ -73,6 +77,12 @@ export const Content = styled.div`
       cursor: pointer;
       width: 300px;
       height: 300px;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 `;

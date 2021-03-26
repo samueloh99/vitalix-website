@@ -5,7 +5,7 @@ import * as colors from '../../styles/colors';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${colors.grey};
+  background: ${colors.blueshock};
   width: 100%;
   height: 500px;
   padding: 0px 160px 0px 160px;

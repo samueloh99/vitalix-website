@@ -23,9 +23,10 @@ export const Container = styled.div`
   position: relative;
 
   h1 {
-    font-size: 30px;
-    color: ${colors.grey};
+    font-size: 36px;
+    color: ${colors.blueshock};
     margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
   @media screen and (max-width: 1300px) {
@@ -109,20 +110,21 @@ export const CardTitle = styled.div`
 `;
 
 export const CardInfo = styled.div`
-  display: flex;
+  display: inline-block;
   justify-content: center;
   width: 100%;
   margin-top: 70px;
+  text-align: center;
 `;
 
 export const CardInfoDescription = styled.div`
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: space-between;
-  width: 400px;
+  width: 280px;
   text-align: center;
   padding: 30px;
-  margin-left: 50px;
+  margin: 25px;
   background: white;
   border-radius: 10px;
   cursor: pointer;
@@ -135,13 +137,13 @@ export const CardInfoDescription = styled.div`
   .textDesc {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 345px;
   }
 
   h1 {
     font-size: 20px;
     color: ${colors.blueDark};
-    height: 40px;
+    height: 60px;
   }
 
   h5 {

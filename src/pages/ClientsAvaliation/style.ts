@@ -3,14 +3,17 @@ import styled from 'styled-components';
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
-  padding: 0px 160px 0px 160px;
-  margin: 200px 0px 100px 0px;
+  padding: 40px 160px 0px 160px;
+  margin: 200px 0px 0px 0px;
   width: 100%;
+  height: 90vh;
+  background: white;
 
   > h1 {
-    color: ${colors.grey};
-    font-size: 30px;
+    color: ${colors.blueshock};
+    font-size: 36px;
     margin-bottom: 100px;
+    text-transform: uppercase;
   }
 
   .slick-slide {
@@ -41,11 +44,11 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
-    padding: 0px 10px 0px 10px;
+    padding: 40px 10px 0px 10px;
 
     .slick-slide {
       margin-bottom: 20px;
-      height: 100%;
+      height: 300px;
     }
 
     .slick-prev {

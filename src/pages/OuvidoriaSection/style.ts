@@ -4,9 +4,9 @@ import * as colors from '../../styles/colors';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 160px 0px 160px;
-  margin-bottom: 100px;
+  padding: 80px 160px 100px 160px;
   height: 100%;
+  background: white;
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
@@ -17,9 +17,15 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   h1 {
-    font-size: 30px;
-    color: ${colors.grey};
+    font-size: 36px;
+    color: ${colors.blueshock};
+    text-transform: uppercase;
     margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 40px;
   }
 `;
 
@@ -32,7 +38,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 300px;
+    width: 400px;
 
     label {
       color: ${colors.black};
@@ -40,8 +46,8 @@ export const Content = styled.div`
     }
 
     input {
-      margin-bottom: 30px;
-      width: 250px;
+      margin-bottom: 5px;
+      width: 400px;
       padding: 5px;
       border-radius: 5px;
       border: 1px solid black;
@@ -49,6 +55,7 @@ export const Content = styled.div`
 
     textarea {
       margin-bottom: 30px;
+      width: 400px;
     }
 
     #subject {
@@ -73,7 +80,7 @@ export const Content = styled.div`
   }
 
   .ouvidoriaDesktop {
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
   }
 
@@ -85,18 +92,30 @@ export const Content = styled.div`
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
-    width: 100%;
 
+    form {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
     .ouvidoriaDesktop {
       display: none;
     }
 
+    textarea {
+      margin-bottom: 30px;
+      width: 400px;
+    }
+
     .ouvidoriaMobile {
       display: flex;
-      border-radius: 10px;
+      border-radius: 50%;
       cursor: pointer;
       width: 300px;
       height: 300px;
+      margin-bottom: 100px;
+      margin-top: 50px;
     }
   }
 `;

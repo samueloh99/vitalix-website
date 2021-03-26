@@ -35,8 +35,7 @@ const ClientsAvaliation: React.FC = () => {
   };
 
   const settings = {
-    dots: true,
-    // infinite: true,
+    infinite: true,
     speed: 500,
     // autoplay: true,
     // autoplaySpeed: 4000,
@@ -52,7 +51,7 @@ const ClientsAvaliation: React.FC = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -61,7 +60,7 @@ const ClientsAvaliation: React.FC = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
     ],

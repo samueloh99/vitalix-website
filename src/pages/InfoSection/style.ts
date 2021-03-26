@@ -4,13 +4,14 @@ import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 0px 160px 0px 160px;
   margin: 100px 0px 100px 0px;
+  background: white;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
@@ -22,7 +23,7 @@ export const Container = styled.div`
 
 export const CardContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 70%;
   position: relative;
 
   @media screen and (max-width: 1300px) {

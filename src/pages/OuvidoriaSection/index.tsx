@@ -15,7 +15,7 @@ const OuvidoriaSection: React.FC = () => {
   return (
     <Container>
       <Header>
-        <h4 style={{ color: '#8a8a8a' }}>
+        <h4 style={{ color: '#8a8a8a', fontSize: '20px' }}>
           ENVIE SUAS DÚVIDAS, CRÍTICAS OU ELOGIOS
         </h4>
         <h1>Fale Conosco</h1>
