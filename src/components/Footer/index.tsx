@@ -24,17 +24,16 @@ const Footer: React.FC = () => {
             <h1>ENTRE EM CONTATO</h1>
             <h4>
               <HiOutlineMail size="25" />
-              E-mail:
-              <p>vitalix.odonto@gmail.com</p>
+              <p>E-mail:</p> vitalix.odonto@gmail.com
             </h4>
             <h4>
               <AiOutlinePhone size="25" />
-              Tel. Fixo:
+              <p>Tel. Fixo:</p>
               <a href="tel:551150838884">(11) 5083-8884</a>
             </h4>
             <h4>
               <AiOutlineWhatsApp size="25" />
-              WhatsApp:
+              <p>WhatsApp:</p>
               <a
                 href="https://api.whatsapp.com/send?phone=5511942059930&text=Ol%C3%A1%2C%20desejo%20atendimento."
                 target="_blank"
