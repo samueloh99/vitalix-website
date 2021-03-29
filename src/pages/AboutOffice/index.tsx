@@ -1,19 +1,29 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React from 'react';
+import React, { useState } from 'react';
 
 import Slider from 'react-slick';
 
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-import { Container } from './style';
+import { AiFillCloseCircle } from 'react-icons/ai';
+
+import { Container, Modal } from './style';
 
 import { ImageData } from './ImageData';
 
 import * as colors from '../../styles/colors';
 
 const AboutOffice: React.FC = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [imgId, setImgId] = useState(-1);
+
+  const toggleModal = (id: number) => {
+    setModalOpen(!modalOpen);
+    setImgId(id);
+  };
+
   const NextArrow = (props: { onClick: any }) => {
     const { onClick } = props;
 
@@ -71,12 +81,29 @@ const AboutOffice: React.FC = () => {
       <Slider {...settings}>
         {ImageData.map(item => {
           return (
-            <div key={item.id}>
+            <div
+              onClick={() => toggleModal(item.id)}
+              className="imgSlider"
+              key={item.id}
+            >
               <img src={item.img} alt="img" />
             </div>
           );
         })}
       </Slider>
+      {ImageData.map(item => {
+        return (
+          imgId === item.id && (
+            <Modal
+              onClick={() => toggleModal(item.id)}
+              open={modalOpen === true ? 'flex' : 'none'}
+            >
+              <img src={item.img} alt="img" />
+              <AiFillCloseCircle onClick={() => toggleModal(item.id)} />
+            </Modal>
+          )
+        );
+      })}
     </Container>
   );
 };

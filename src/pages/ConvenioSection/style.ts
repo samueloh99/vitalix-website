@@ -14,6 +14,7 @@ export const Container = styled.div`
     color: ${colors.blueshock};
     font-size: 36px;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   div {
@@ -24,6 +25,7 @@ export const Container = styled.div`
 
     img {
       height: 150px;
+      margin: 15px;
     }
   }
 

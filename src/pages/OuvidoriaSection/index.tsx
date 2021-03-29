@@ -7,10 +7,6 @@ import React from 'react';
 
 import { Container, Header, Content } from './style';
 
-import ouvidoria from '../../assets/ouvidoria.png';
-
-import ouvidoriaMobile from '../../assets/ouvidoriaMobile.png';
-
 const OuvidoriaSection: React.FC = () => {
   return (
     <Container>
@@ -35,8 +31,6 @@ const OuvidoriaSection: React.FC = () => {
           <textarea id="subject" name="subject" />
           <input className="buttonSend" type="submit" value="ENVIAR" />
         </form>
-        <img src={ouvidoria} className="ouvidoriaDesktop" alt="map" />
-        <img src={ouvidoriaMobile} className="ouvidoriaMobile" alt="map" />
       </Content>
     </Container>
   );

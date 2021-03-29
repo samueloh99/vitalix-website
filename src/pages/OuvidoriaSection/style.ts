@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+
+import ouvidoria from '../../assets/ouvidoria.jpg';
+
 import * as colors from '../../styles/colors';
 
 export const Container = styled.div`
@@ -6,7 +9,9 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 80px 160px 100px 160px;
   height: 100%;
-  background: white;
+  background-image: url(${ouvidoria});
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
@@ -59,7 +64,7 @@ export const Content = styled.div`
     }
 
     #subject {
-      width: 300px;
+      width: 400px;
       height: 200px;
     }
 
@@ -79,43 +84,22 @@ export const Content = styled.div`
     }
   }
 
-  .ouvidoriaDesktop {
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .ouvidoriaMobile {
-    display: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
   @media screen and (max-width: 1300px) {
     flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
 
     form {
       width: 100%;
+
       input {
         width: 100%;
       }
-    }
-    .ouvidoriaDesktop {
-      display: none;
-    }
 
-    textarea {
-      margin-bottom: 30px;
-      width: 400px;
-    }
-
-    .ouvidoriaMobile {
-      display: flex;
-      border-radius: 50%;
-      cursor: pointer;
-      width: 300px;
-      height: 300px;
-      margin-bottom: 100px;
-      margin-top: 50px;
+      #subject {
+        width: 80%;
+        height: 200px;
+      }
     }
   }
 `;

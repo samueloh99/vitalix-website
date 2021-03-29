@@ -19,6 +19,7 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   margin-bottom: 40px;
+
   h1 {
     font-size: 36px;
     color: ${colors.blueshock};
@@ -29,60 +30,57 @@ export const Header = styled.div`
 export const Content = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  div {
-    width: 500px;
-    margin: 85px 10px 0px 30px;
-    text-align: center;
-
-    h4 {
-      font-size: 17px;
-      color: ${colors.black};
-      margin-bottom: 30px;
-    }
-  }
-
-  .mapDesktop {
+  .mapImg {
     border-radius: 10px;
     cursor: pointer;
     width: 500px;
-  }
-
-  .mapMobile {
-    display: none;
-    border-radius: 10px;
-    cursor: pointer;
   }
 
   @media screen and (max-width: 1300px) {
     flex-direction: column;
-    width: 100%;
-    text-align: center;
+    align-items: center;
 
-    div {
-      width: 350px;
-      margin-top: 40px;
-      text-align: center;
-      margin: 30px 0px 0px 0px;
-    }
-
-    .mapDesktop {
-      display: none;
-    }
-
-    .mapMobile {
-      display: flex;
-      border-radius: 10px;
-      cursor: pointer;
+    .mapImg {
       width: 300px;
-      height: 300px;
-    }
-
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
   }
+`;
+
+export const WrapperText = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: ${colors.black};
+  width: 50%;
+
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  h4 {
+    font-size: 15px;
+    margin: 0;
+  }
+`;
+
+export const Subtitle = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const CardInfo = styled.div`
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  background: ${colors.white};
+  padding: 40px;
+  height: 100%;
+  align-items: center;
 `;

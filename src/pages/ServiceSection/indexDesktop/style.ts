@@ -27,6 +27,7 @@ export const Container = styled.div`
     color: ${colors.blueshock};
     margin-bottom: 40px;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   @media screen and (max-width: 1300px) {

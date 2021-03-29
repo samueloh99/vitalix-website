@@ -21,7 +21,7 @@ const IndexMobile: React.FC = () => {
   };
 
   return (
-    <Container id="serviceSection">
+    <Container id="serviceSectionMobile">
       <h1>Conheça os nossos tratamentos</h1>
       <ServiceOptions>
         {ServiceData.map(item => {

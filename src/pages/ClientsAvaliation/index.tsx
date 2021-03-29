@@ -67,14 +67,21 @@ const ClientsAvaliation: React.FC = () => {
   };
   return (
     <Container>
-      <h1>Oque dizem sobre nós</h1>
+      <h1 style={{ fontWeight: 700 }}>O que dizem sobre nós</h1>
       <Slider {...settings}>
         {ClientsData.map((item, index) => {
           return (
             <MainCard key={index}>
-              <p style={{ marginBottom: '30px' }}>❤️</p>
-              <h1>{item.name}</h1>
-              <h4>{item.comment}</h4>
+              <a
+                href="https://www.google.com/search?q=odonto+vitalix&oq=odonto+vitalix&aqs=chrome.0.69i59j0i395i433l3j0i395i457j0i395j69i60l2.1908j1j4&sourceid=chrome&ie=UTF-8#lrd=0x94ce594549888885:0x1bc339a32884893d,1,,,"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none' }}
+              >
+                <p style={{ marginBottom: '30px' }}>❤️</p>
+                <h1>{item.name}</h1>
+                <h4>{item.comment}</h4>
+              </a>
             </MainCard>
           );
         })}

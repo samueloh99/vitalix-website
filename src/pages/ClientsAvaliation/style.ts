@@ -12,7 +12,7 @@ export const Container = styled.div`
   > h1 {
     color: ${colors.blueshock};
     font-size: 36px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-transform: uppercase;
   }
 
@@ -62,6 +62,7 @@ export const Container = styled.div`
 
 export const MainCard = styled.div`
   padding: 0px 20px 0px 20px;
+  cursor: pointer;
 
   h1 {
     font-size: 20px;

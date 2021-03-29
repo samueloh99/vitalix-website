@@ -50,10 +50,10 @@ export const ImageData = [
     id: 8,
     img: imgCarousel8,
   },
-  {
-    id: 9,
-    img: imgCarousel9,
-  },
+  // {
+  //   id: 9,
+  //   img: imgCarousel9,
+  // },
   {
     id: 10,
     img: imgCarousel10,

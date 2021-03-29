@@ -5,101 +5,96 @@ import * as colors from '../../styles/colors';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${colors.blueshock};
+  background: #f8f8f8;
   width: 100%;
   height: 500px;
-  padding: 0px 160px 0px 160px;
-  justify-content: space-between;
+  padding: 40px 160px 0px 160px;
+  justify-content: space-around;
 
   @media screen and (max-width: 1300px) {
     padding: 0px 10px 0px 10px;
-    height: 700px;
+    height: 850px;
   }
 `;
 
-export const FooterInfo = styled.div`
+export const WrapSection = styled.div`
   display: flex;
-  flex: row;
-  margin-top: 30px;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1300px) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 `;
 
-export const FooterInfoSection = styled.div`
+export const Section = styled.div`
   display: flex;
+  color: black;
   flex-direction: column;
-  left: 0;
+  width: 50%;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 250px;
+  }
 
   h4 {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    color: ${colors.white};
-    font-weight: lighter;
-    font-size: 15px;
+    font-weight: 200;
   }
 
-  @media screen and (max-width: 1300px) {
-    margin-bottom: 10px;
-    h4 {
-      font-size: 12px;
-    }
+  a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
   }
-`;
 
-export const FooterMidle = styled.div`
-  display: flex;
-  flex-direction: column;
-  left: 0;
-  align-items: center;
+  .h4Personalized {
+    margin-top: 20px;
+  }
 
   svg {
     margin-right: 10px;
   }
-  h4 {
-    margin-bottom: 10px;
-    color: ${colors.white};
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-  }
-
-  img {
-    width: 150px;
-  }
-
-  @media screen and (max-width: 1300px) {
-    margin: 20px 0px 50px 0px;
-    h4 {
-      font-size: 12px;
-    }
-  }
 `;
 
 export const FooterEnd = styled.div`
-  text-align: center;
-  margin-bottom: 30px;
-
-  a {
-    color: ${colors.white};
-  }
+  display: flex;
+  width: 100%;
+  color: white;
+  background: ${colors.grey};
+  flex-direction: column;
+  align-items: center;
 
   h4 {
-    color: ${colors.white};
-    font-weight: lighter;
-    font-size: 15px;
+    font-weight: 200;
+    font-size: 10px;
   }
 
-  @media screen and (max-width: 1300px) {
-    h4 {
-      font-size: 10px;
-    }
+  a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: white;
+    font-weight: 200;
+    font-size: 10px;
+  }
+`;
+
+export const SocialMediaSection = styled.div`
+  width: 100%;
+  text-align: center;
+
+  a {
+    margin: 10px;
+  }
+
+  svg {
+    background: ${colors.blueshock};
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 7px;
   }
 `;

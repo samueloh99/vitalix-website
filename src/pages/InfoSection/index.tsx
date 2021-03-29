@@ -58,7 +58,7 @@ const InfoSection: React.FC = () => {
               <li>Respeito à diversidade; </li>
               <li>Capacitação e valorização da equipe; </li>
               <li>Transparência gerencial; </li>
-              <li>Aperfeiçoamentoconstante.</li>
+              <li>Aperfeiçoamento constante.</li>
             </ul>
           </CardBack>
         </Card>
