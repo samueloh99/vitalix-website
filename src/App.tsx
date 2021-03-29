@@ -17,10 +17,12 @@ import ConvenioSection from './pages/ConvenioSection';
 import LocalizationSection from './pages/LocalizationSection';
 import OuvidoriaSection from './pages/OuvidoriaSection';
 import Footer from './components/Footer';
+import WhatsappIcon from './components/WhatsappIcon';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <WhatsappIcon />
       <Navbar />
       <Home />
       <AboutOffice />
