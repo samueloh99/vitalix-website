@@ -99,4 +99,14 @@ export const Modal = styled.div<ModalProps>`
     font-size: 40px;
     transition: 0.3s;
   }
+
+  @media screen and (max-width: 1300px) {
+    img {
+      width: 100%;
+    }
+
+    svg {
+      font-size: 30px;
+    }
+  }
 `;
