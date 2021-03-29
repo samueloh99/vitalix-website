@@ -22,11 +22,11 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   h1 {
-    font-size: 36px;
-    color: ${colors.blueshock};
+    font-size: 33px;
+    color: #73849b;
     text-transform: uppercase;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   @media screen and (max-width: 1300px) {

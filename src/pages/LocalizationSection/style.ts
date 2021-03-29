@@ -21,9 +21,10 @@ export const Header = styled.div`
   margin-bottom: 40px;
 
   h1 {
-    font-size: 36px;
-    color: ${colors.blueshock};
+    font-size: 33px;
+    color: #73849b;
     text-transform: uppercase;
+    font-weight: 700;
   }
 `;
 

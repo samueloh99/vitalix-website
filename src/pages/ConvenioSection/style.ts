@@ -11,8 +11,8 @@ export const Container = styled.div`
   background: white;
 
   h1 {
-    color: ${colors.blueshock};
-    font-size: 36px;
+    color: #73849b;
+    font-size: 33px;
     text-transform: uppercase;
     font-weight: 700;
   }

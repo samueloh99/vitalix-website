@@ -19,7 +19,7 @@ const LocalizationSection: React.FC = () => {
   return (
     <Container id="localization">
       <Header>
-        <h1 style={{ fontWeight: 700 }}>Localização</h1>
+        <h1>Localização</h1>
       </Header>
       <Content>
         <WrapperText>

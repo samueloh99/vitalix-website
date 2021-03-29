@@ -10,9 +10,10 @@ export const Container = styled.div`
   background: white;
 
   > h1 {
-    color: ${colors.blueshock};
-    font-size: 36px;
+    color: #73849b;
+    font-size: 33px;
     margin-bottom: 50px;
+    font-weight: 700;
     text-transform: uppercase;
   }
 

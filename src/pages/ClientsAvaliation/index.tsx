@@ -67,7 +67,7 @@ const ClientsAvaliation: React.FC = () => {
   };
   return (
     <Container>
-      <h1 style={{ fontWeight: 700 }}>O que dizem sobre nós</h1>
+      <h1>O que dizem sobre nós</h1>
       <Slider {...settings}>
         {ClientsData.map((item, index) => {
           return (

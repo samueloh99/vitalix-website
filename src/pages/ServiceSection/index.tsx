@@ -6,7 +6,7 @@ import { CardsData } from './NewData';
 
 const ServiceSection: React.FC = () => {
   return (
-    <Container>
+    <Container id="serviceSection">
       <Title>
         <h1>CONHEÇA OS NOSSOS TRATAMENTOS</h1>
       </Title>
