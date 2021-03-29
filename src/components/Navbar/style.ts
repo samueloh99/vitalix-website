@@ -39,7 +39,7 @@ export const HeaderContent = styled.div`
   position: relative;
 
   a > img {
-    height: 100px;
+    height: 120px;
   }
   @media screen and (max-width: 1200px) {
     img {
@@ -103,7 +103,7 @@ export const HeaderOptions = styled.div<NavBarProps>`
     text-decoration: none;
     color: ${colors.black};
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 15px;
 
     & + a {
       margin-left: 20px;

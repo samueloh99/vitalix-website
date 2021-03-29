@@ -96,6 +96,7 @@ export const FooterEnd = styled.div`
   background: ${colors.grey};
   flex-direction: column;
   align-items: center;
+  padding: 10px 0px 10px 0px;
 
   h4 {
     font-weight: 200;
@@ -120,7 +121,7 @@ export const SocialMediaSection = styled.div`
   }
 
   svg {
-    background: ${colors.blueshock};
+    background: #73849b;
     border-radius: 50%;
     width: 50px;
     height: 50px;

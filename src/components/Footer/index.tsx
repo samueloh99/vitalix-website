@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram size={30} color="black" />
+            <FaInstagram size={30} color="white" />
           </a>
           <a
             className="facebookIcon"
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebookF size={30} color="black" />
+            <FaFacebookF size={30} color="white" />
           </a>
         </SocialMediaSection>
       </Container>
