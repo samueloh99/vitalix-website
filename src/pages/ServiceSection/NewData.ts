@@ -10,6 +10,7 @@ import endondontia from '../../assets/tratamentos/tratamentoEndodontico.jpg';
 import clareamento from '../../assets/tratamentos/clareamento.jpg';
 import facedireta from '../../assets/tratamentos/facedireta.jpg';
 import protocolo from '../../assets/tratamentos/superiorInferior.jpeg';
+import preenchimento from '../../assets/tratamentos/preenchimento2.jpg';
 import restauracao from '../../assets/tratamentos/restauracao.jpg';
 
 export const CardsData = [
@@ -109,6 +110,6 @@ export const CardsData = [
     title: 'PREENCHIMENTOS',
     desc:
       'Trata-se de um procedimento estético realizado através de um produto conhecido como Ácido Hialurônico, na qual é utilizado para preencher rugas finas e marcadas do rosto, assim devolvendo o volume, suavizando as rugas e realçando melhor os contornos do rosto, proporcionando uma aparência mais jovem, renovada e descansada.',
-    img: cirurgia,
+    img: preenchimento,
   },
 ];

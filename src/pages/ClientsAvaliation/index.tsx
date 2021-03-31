@@ -84,7 +84,7 @@ const ClientsAvaliation: React.FC = () => {
                 <h1>{name}</h1>
                 <h4>
                   {comment.length > 100
-                    ? `${comment.substring(0, 100 - 3)}...`
+                    ? `${comment.substring(0, 150 - 3)}`
                     : comment}
                 </h4>
               </a>
