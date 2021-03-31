@@ -5,7 +5,7 @@ export const Container = styled.div`
   position: fixed;
   z-index: 10000;
   bottom: 30px;
-  left: 30px;
+  right: 30px;
 
   img {
     width: 55px;

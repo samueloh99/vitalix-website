@@ -70,6 +70,8 @@ const ClientsAvaliation: React.FC = () => {
       <h1>O que dizem sobre nós</h1>
       <Slider {...settings}>
         {ClientsData.map((item, index) => {
+          const { comment, name } = item;
+
           return (
             <MainCard key={index}>
               <a
@@ -79,8 +81,12 @@ const ClientsAvaliation: React.FC = () => {
                 style={{ textDecoration: 'none' }}
               >
                 <p style={{ marginBottom: '30px' }}>❤️</p>
-                <h1>{item.name}</h1>
-                <h4>{item.comment}</h4>
+                <h1>{name}</h1>
+                <h4>
+                  {comment.length > 100
+                    ? `${comment.substring(0, 100 - 3)}...`
+                    : comment}
+                </h4>
               </a>
             </MainCard>
           );

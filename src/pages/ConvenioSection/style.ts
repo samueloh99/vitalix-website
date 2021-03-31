@@ -24,8 +24,8 @@ export const Container = styled.div`
     text-align: center;
 
     img {
-      height: 150px;
-      margin: 15px;
+      height: 160px;
+      margin: 25px;
     }
   }
 

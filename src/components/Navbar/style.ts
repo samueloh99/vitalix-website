@@ -16,11 +16,28 @@ const appearFromLeft = keyframes`
   }
 `;
 
+const spin = keyframes`
+	0% {
+		transform: scale(1, 1);
+		
+	}
+	50% {
+		transform: scale(-1, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+`;
+
 export const Container = styled.div`
   animation: ${appearFromLeft} 1.5s;
   position: sticky;
   top: 0;
   z-index: 999;
+
+  @media screen and (max-width: 1200px) {
+    animation: none;
+  }
 `;
 
 export const Header = styled.header`
@@ -40,6 +57,7 @@ export const HeaderContent = styled.div`
 
   a > img {
     height: 120px;
+    animation: ${spin} 4s infinite;
   }
   @media screen and (max-width: 1200px) {
     img {

@@ -53,7 +53,9 @@ export const Card = styled.div`
     border-radius: 50%;
     position: absolute;
     top: -55px;
-    left: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   @media screen and (max-width: 1300px) {

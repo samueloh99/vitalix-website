@@ -8,7 +8,7 @@ import inter from '../../assets/convenioos/interodonto.png';
 import porto from '../../assets/convenioos/porto-seguro.png';
 import sulamerica from '../../assets/convenioos/sulamerica.png';
 import unimed from '../../assets/convenioos/unimed.png';
-import mediservice from '../../assets/convenioos/mediservice.jpeg';
+import mediservice from '../../assets/convenioos/mediservice.png';
 
 const ConvenioSection: React.FC = () => {
   return (
