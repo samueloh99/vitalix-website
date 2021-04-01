@@ -8,6 +8,6 @@ export const Container = styled.div`
   right: 30px;
 
   img {
-    width: 55px;
+    width: 60px;
   }
 `;

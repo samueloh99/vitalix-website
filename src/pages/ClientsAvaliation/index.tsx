@@ -82,11 +82,7 @@ const ClientsAvaliation: React.FC = () => {
               >
                 <p style={{ marginBottom: '30px' }}>❤️</p>
                 <h1>{name}</h1>
-                <h4>
-                  {comment.length > 100
-                    ? `${comment.substring(0, 150 - 3)}`
-                    : comment}
-                </h4>
+                <h4>{comment}</h4>
               </a>
             </MainCard>
           );
