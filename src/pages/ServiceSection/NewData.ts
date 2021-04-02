@@ -9,7 +9,7 @@ import toxina from '../../assets/tratamentos/toxina.jpg';
 import endondontia from '../../assets/tratamentos/tratamentoEndodontico.jpg';
 import clareamento from '../../assets/tratamentos/clareamento.jpg';
 import facedireta from '../../assets/tratamentos/facedireta.jpg';
-import protocolo from '../../assets/tratamentos/superiorInferior.jpeg';
+import protocolo from '../../assets/tratamentos/proteseinferiorsuperior.png';
 import preenchimento from '../../assets/tratamentos/preenchimento2.jpg';
 import restauracao from '../../assets/tratamentos/restauracao.jpg';
 

@@ -16,6 +16,9 @@ import imgCarousel15 from '../../assets/aboutOffice/15.jpg';
 import imgCarousel16 from '../../assets/aboutOffice/16.jpg';
 import imgCarousel17 from '../../assets/aboutOffice/17.jpg';
 import imgCarousel18 from '../../assets/aboutOffice/18.jpg';
+import imgCarousel19 from '../../assets/aboutOffice/19.jpg';
+import imgCarousel20 from '../../assets/aboutOffice/20.jpg';
+import imgCarousel21 from '../../assets/aboutOffice/21.jpg';
 
 export const ImageData = [
   {
@@ -89,5 +92,17 @@ export const ImageData = [
   {
     id: 18,
     img: imgCarousel18,
+  },
+  {
+    id: 19,
+    img: imgCarousel19,
+  },
+  {
+    id: 20,
+    img: imgCarousel20,
+  },
+  {
+    id: 21,
+    img: imgCarousel21,
   },
 ];
