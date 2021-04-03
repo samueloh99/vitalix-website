@@ -6,7 +6,7 @@ import imgCarousel5 from '../../assets/aboutOffice/5.jpg';
 import imgCarousel6 from '../../assets/aboutOffice/6.jpg';
 import imgCarousel7 from '../../assets/aboutOffice/7.jpg';
 import imgCarousel8 from '../../assets/aboutOffice/8.jpg';
-import imgCarousel9 from '../../assets/aboutOffice/9.jpg';
+// import imgCarousel9 from '../../assets/aboutOffice/9.jpg';
 import imgCarousel10 from '../../assets/aboutOffice/10.jpg';
 import imgCarousel11 from '../../assets/aboutOffice/11.jpg';
 import imgCarousel12 from '../../assets/aboutOffice/12.jpg';
